@@ -21,53 +21,55 @@ export default function Home() {
           }}
         ></div>
         <div className="absolute inset-0 z-[1] h-full w-full bg-gradient-to-br from-white/5 to-transparent"></div>
-        <div className="relative z-10 flex items-center justify-between px-8 py-6">
-          <div>
-            <Link
-              href={"/"}
-              className="text-3xl font-bold uppercase tracking-tight text-white/60 duration-300 hover:text-white"
-            >
-              <span>NEO</span>
-              <span className="text-white/40">SEC</span>
-            </Link>
-          </div>
-          <a
-            href="mailto:info@neosec.tech"
-            className="border border-white/20 bg-black px-12 py-6 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black"
-          >
-            CONTACT US
-          </a>
-        </div>
-        <div className="relative z-10 flex w-full flex-col gap-14 px-4 py-24">
-          <div>
-            <h1
-              className={`${pop.className} whitespace-nowrap text-7xl font-semibold uppercase tracking-tight antialiased`}
-            >
-              Cybersecurity Redefined
-            </h1>
-            <h1
-              className={`${pop.className} mt-4 whitespace-nowrap text-7xl font-semibold uppercase tracking-tight text-white/70 antialiased`}
-            >
-              Proactive. Adaptive. Relentless.
-            </h1>
-          </div>
-          <p className="text-lg font-normal tracking-wider text-white/70">
-            Securing your digital presence when others fall short - even in the
-            most challenging scenarios.{" "}
-          </p>
-          <div className="flex gap-4">
-            <Link
-              href="/services"
+        <div className="flex min-h-screen flex-col">
+          <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-6">
+            <div>
+              <Link
+                href={"/"}
+                className="text-3xl font-bold uppercase tracking-tight text-white/60 duration-300 hover:text-white"
+              >
+                <span>NEO</span>
+                <span className="text-white/40">SEC</span>
+              </Link>
+            </div>
+            <a
+              href="mailto:info@neosec.tech"
               className="border border-white/20 bg-black px-12 py-6 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black"
             >
-              services
-            </Link>
-            {/* <a
+              CONTACT US
+            </a>
+          </div>
+          <div className="container relative z-10 mx-auto flex w-full flex-1 flex-col justify-center gap-14 px-4">
+            <div>
+              <h1
+                className={`${pop.className} whitespace-nowrap text-7xl font-semibold uppercase tracking-tight antialiased`}
+              >
+                Cybersecurity Redefined
+              </h1>
+              <h1
+                className={`${pop.className} mt-4 whitespace-nowrap text-7xl font-semibold uppercase tracking-tight text-white/70 antialiased`}
+              >
+                Proactive. Adaptive. Relentless.
+              </h1>
+            </div>
+            <p className="text-lg font-normal tracking-wider text-white/70">
+              Securing your digital presence when others fall short - even in
+              the most challenging scenarios.{" "}
+            </p>
+            <div className="flex gap-4">
+              <Link
+                href="/services"
+                className="border border-white/20 bg-black px-12 py-6 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black"
+              >
+                services
+              </Link>
+              {/* <a
             href="mailto:info@neosec.tech"
             className="bg-transparent px-12 py-6 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black"
           >
             <span className="">services</span>
           </a> */}
+            </div>
           </div>
         </div>
       </section>
@@ -76,7 +78,7 @@ export default function Home() {
           <div className="w-fit border border-white/20 bg-black p-4 text-xs tracking-[0.2em] text-white duration-300 hover:text-white/60">
             IMPOSSIBLE MADE POSSIBLE{" "}
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             <h1
               className={`text-center text-5xl font-semibold tracking-tight text-white ${pop.className}`}
             >
@@ -90,7 +92,7 @@ export default function Home() {
           </div>
           <div className="prose prose-base mt-12 flex max-w-none items-start justify-center gap-20 font-light text-white/80">
             <p className="m-0">
-              {`   At Null Consolidated, we excel in achieving what others consider
+              {`   At NeoSec, we excel in achieving what others consider
               unfeasible. We specialize in an array of services including
               high-profile investigations of white-collar crime, digital threat
               intelligence, digital footprint removal, and the recovery of
@@ -144,7 +146,7 @@ export default function Home() {
               <div className="w-fit border border-white/20 bg-black p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:text-white/60">
                 leading by example{" "}
               </div>
-              <div className="flex flex-col gap-4 text-start">
+              <div className="flex flex-col gap-2 text-start">
                 <h1
                   className={`text-5xl font-semibold tracking-tight text-white ${pop.className}`}
                 >
@@ -157,12 +159,11 @@ export default function Home() {
                 </h2>
               </div>
               <p className="prose prose-base text-white/70">
-                Null Consolidated leads in cybersecurity, continuously updating
-                methods to counter emerging threats. Our commitment to
-                innovation ensures your organization benefits from the latest
-                technologies. Our mentoring program offers a three-part course
-                for all skill levels, providing essential modern tools and
-                knowledge.
+                NeoSec leads in cybersecurity, continuously updating methods to
+                counter emerging threats. Our commitment to innovation ensures
+                your organization benefits from the latest technologies. Our
+                mentoring program offers a three-part course for all skill
+                levels, providing essential modern tools and knowledge.
               </p>
             </div>
           </div>
@@ -210,7 +211,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl py-24">
           <div className="flex items-center justify-center gap-12">
             <div className="flex flex-col gap-8 px-8">
-              <div className="flex flex-col gap-4 px-8 text-start">
+              <div className="flex flex-col gap-2 px-8 text-start">
                 <h1
                   className={`text-5xl font-semibold tracking-tight text-white ${pop.className}`}
                 >
@@ -223,14 +224,14 @@ export default function Home() {
                 </h2>
               </div>
               <p className="prose prose-base px-8 text-white/70">
-                Null Consolidated excels across all sectors, providing
-                unparalleled intelligence solutions. From legal and financial to
-                corporate, government, healthcare, energy, tech, and retail, we
-                deliver results in every industry.
+                NeoSec excels across all sectors, providing unparalleled
+                intelligence solutions. From legal and financial to corporate,
+                government, healthcare, energy, tech, and retail, we deliver
+                results in every industry.
               </p>
             </div>
             <div className="flex h-fit min-w-[720px] flex-col gap-4 bg-gradient-to-br from-zinc-900 to-transparent p-8">
-              <h1 className="text-xl font-medium text-white">{`Industries We've Helped`}</h1>
+              <h1 className="text-xl font-medium text-white">{`Industries We Help`}</h1>
               <div className="flex flex-wrap gap-4">
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
                   governments
@@ -277,7 +278,7 @@ export default function Home() {
               </span>
             </div>
             <p className="prose prose-base px-8 text-center text-white/70">
-              {`Secure critical information with Null Consolidated's elite
+              {`Secure critical information with NeoSec's elite
               intelligence services. Contact us today!`}
             </p>
             <a

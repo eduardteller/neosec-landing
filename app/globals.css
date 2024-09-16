@@ -15,3 +15,8 @@
 .breathe {
   animation: breathe 4s ease-in-out infinite;
 }
+
+::selection {
+  background: #777;
+  color: #fff;
+}
