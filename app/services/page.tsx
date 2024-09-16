@@ -33,38 +33,38 @@ const PageServices = () => {
         <div className="relative z-10 flex items-center justify-between px-8 py-6">
           <Link
             href={"/"}
-            className="text-3xl font-bold uppercase tracking-tight text-white/60 duration-300 hover:text-white"
+            className="text-xl font-bold uppercase tracking-tight text-white/60 duration-300 hover:text-white md:text-3xl"
           >
             <span>NEO</span>
             <span className="text-white/40">SEC</span>
           </Link>
           <a
             href="mailto:info@neosec.tech"
-            className="border border-white/20 bg-black px-12 py-6 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black"
+            className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black lg:px-12 lg:py-6"
           >
             CONTACT US
           </a>
         </div>
         <div className="relative z-10 flex w-full flex-col items-center gap-14 px-4 py-8">
-          <div className="w-fit border border-white/20 bg-black p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-transparent hover:text-white/60">
+          <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-transparent hover:text-white/60 md:p-4">
             null services{" "}
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-2 md:gap-4">
             <span
-              className={`text-5xl font-semibold tracking-tight text-white ${pop.className}`}
+              className={`whitespace-nowrap text-4xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
             >
               Services We
             </span>
             <span
-              className={`text-5xl font-semibold tracking-tight text-white/70 ${pop.className}`}
+              className={`text-4xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
             >
               Offer
             </span>
           </div>
-          <p className="prose prose-base max-w-3xl px-8 text-center text-white/70">
+          <p className="prose prose-base max-w-3xl px-8 text-center leading-loose text-white/70">
             {`Comprehensive cybersecurity solutions, including Digital Footprint Removal, Digital Protection Concierge Services, and Cyber Threat Intelligence, to safeguard your organization's digital presence.`}
           </p>
-          <div className="flex gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-8 lg:flex-row">
             <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
               <EarthLock size={36} className="text-white/40" />
 
@@ -98,7 +98,7 @@ const PageServices = () => {
               </p>
               <a
                 className="flex items-center justify-center text-sm uppercase"
-                href=""
+                href="#section3"
               >
                 Read More <ArrowUpRight />
               </a>
@@ -111,7 +111,7 @@ const PageServices = () => {
               </p>
               <a
                 className="flex items-center justify-center text-sm uppercase"
-                href=""
+                href="#section4"
               >
                 Read More <ArrowUpRight />
               </a>
@@ -121,8 +121,8 @@ const PageServices = () => {
       </section>
       <section className="bg-black">
         <div id="section1" className="mx-auto max-w-6xl py-24">
-          <div className="flex justify-center gap-8">
-            <div className="h-[456px] w-[456px] border border-white/80 p-8">
+          <div className="flex flex-col items-center justify-center gap-8 px-8 md:flex-row md:items-start">
+            <div className="h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px]">
               <Image
                 src={pic1}
                 alt="cybersecurity"
@@ -130,9 +130,9 @@ const PageServices = () => {
               ></Image>
             </div>
             <div className="flex-1">
-              <div className="mb-4 flex w-full gap-2">
+              <div className="mb-4 flex w-full flex-wrap gap-2">
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
+                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
                 >
                   Cyber Threat
                 </span>
@@ -182,11 +182,11 @@ const PageServices = () => {
           </div>
         </div>
         <div id="section2" className="mx-auto max-w-6xl py-24">
-          <div className="flex justify-center gap-8">
+          <div className="flex flex-col items-center justify-center gap-8 px-8 md:flex-row md:items-start">
             <div className="flex-1">
-              <div className="mb-4 flex w-full flex-col gap-2">
+              <div className="mb-4 flex w-full flex-wrap gap-2 md:flex-col">
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white ${pop.className} whitespace-nowrap antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
                 >
                   Digital Protection Concierge
                 </span>
@@ -233,7 +233,7 @@ const PageServices = () => {
                 ]}
               ></Accordion>
             </div>
-            <div className="h-[456px] w-[456px] border border-white/80 p-8">
+            <div className="h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px]">
               <Image
                 src={pic2}
                 alt="cybersecurity"
@@ -242,9 +242,9 @@ const PageServices = () => {
             </div>
           </div>
         </div>
-        <div id="section1" className="mx-auto max-w-6xl py-24">
-          <div className="flex justify-center gap-8">
-            <div className="h-[456px] w-[456px] border border-white/80 p-8">
+        <div id="section3" className="mx-auto max-w-6xl py-24">
+          <div className="flex flex-col items-center justify-center gap-8 px-8 md:flex-row md:items-start">
+            <div className="h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px]">
               <Image
                 src={pic4}
                 alt="cybersecurity"
@@ -252,7 +252,7 @@ const PageServices = () => {
               ></Image>
             </div>
             <div className="flex-1">
-              <div className="mb-4 flex w-full gap-2">
+              <div className="mb-4 flex w-full flex-wrap gap-2">
                 <span
                   className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
                 >
@@ -283,12 +283,12 @@ const PageServices = () => {
             </div>
           </div>
         </div>
-        <div id="section2" className="mx-auto max-w-6xl py-24">
-          <div className="flex justify-center gap-8">
+        <div id="section4" className="mx-auto max-w-6xl py-24">
+          <div className="flex flex-col items-center justify-center gap-8 px-8 md:flex-row md:items-start">
             <div className="flex-1">
-              <div className="mb-4 flex w-full gap-2">
+              <div className="mb-4 flex w-full flex-wrap gap-2 md:flex-col">
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white ${pop.className} whitespace-nowrap antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
                 >
                   Cyber Investigations & Asset
                 </span>
@@ -319,7 +319,7 @@ const PageServices = () => {
                 ]}
               ></Accordion>
             </div>
-            <div className="h-[456px] w-[456px] border border-white/80 p-8">
+            <div className="h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px]">
               <Image
                 src={pic3}
                 alt="cybersecurity"
@@ -330,11 +330,11 @@ const PageServices = () => {
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto max-w-7xl py-24">
+        <div className="mx-auto max-w-7xl px-4 py-24">
           <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-zinc-700 to-transparent px-8 py-16">
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               <span
-                className={`text-3xl font-semibold tracking-tight text-white ${pop.className}`}
+                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white ${pop.className}`}
               >
                 Protect Your Digital
               </span>
@@ -349,7 +349,7 @@ const PageServices = () => {
             </p>
             <a
               href="mailto:info@neosec.tech"
-              className="border border-white/20 bg-black px-12 py-6 uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black"
+              className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-base"
             >
               reach our team
             </a>

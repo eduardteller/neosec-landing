@@ -26,7 +26,7 @@ export default function Home() {
             <div>
               <Link
                 href={"/"}
-                className="text-3xl font-bold uppercase tracking-tight text-white/60 duration-300 hover:text-white"
+                className="text-xl font-bold uppercase tracking-tight text-white/60 duration-300 hover:text-white md:text-3xl"
               >
                 <span>NEO</span>
                 <span className="text-white/40">SEC</span>
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
             <a
               href="mailto:info@neosec.tech"
-              className="border border-white/20 bg-black px-12 py-6 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black"
+              className="border border-white/20 bg-black px-6 py-3 text-xs uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-sm"
             >
               CONTACT US
             </a>
@@ -42,24 +42,24 @@ export default function Home() {
           <div className="container relative z-10 mx-auto flex w-full flex-1 flex-col justify-center gap-14 px-4">
             <div>
               <h1
-                className={`${pop.className} whitespace-nowrap text-7xl font-semibold uppercase tracking-tight antialiased`}
+                className={`${pop.className} whitespace-nowrap text-2xl font-semibold uppercase tracking-tight antialiased sm:text-3xl md:text-5xl lg:text-7xl`}
               >
                 Cybersecurity Redefined
               </h1>
               <h1
-                className={`${pop.className} mt-4 whitespace-nowrap text-7xl font-semibold uppercase tracking-tight text-white/70 antialiased`}
+                className={`${pop.className} mt-2 whitespace-nowrap text-2xl font-semibold uppercase tracking-tight text-white/70 antialiased sm:text-3xl md:mt-4 md:text-5xl lg:text-7xl`}
               >
                 Proactive. Adaptive. Relentless.
               </h1>
             </div>
-            <p className="text-lg font-normal tracking-wider text-white/70">
+            <p className="prose prose-base max-w-none text-base tracking-wider text-white/70 md:prose-lg">
               Securing your digital presence when others fall short - even in
               the most challenging scenarios.{" "}
             </p>
             <div className="flex gap-4">
               <Link
                 href="/services"
-                className="border border-white/20 bg-black px-12 py-6 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black"
+                className="border border-white/20 bg-black px-6 py-3 text-xs uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-sm"
               >
                 services
               </Link>
@@ -90,7 +90,7 @@ export default function Home() {
               Global Influence
             </h2>
           </div>
-          <div className="prose prose-base mt-12 flex max-w-none items-start justify-center gap-20 font-light text-white/80">
+          <div className="prose prose-base mt-12 flex max-w-none flex-col items-start justify-center gap-20 font-light text-white/80 md:flex-row">
             <p className="m-0">
               {`   At NeoSec, we excel in achieving what others consider
               unfeasible. We specialize in an array of services including
@@ -124,17 +124,17 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto max-w-7xl px-4 pt-24">
-          <div className="flex w-full justify-center border-2 border-white/60">
-            <div className="flex h-min w-1/2 gap-8">
-              <div className="h-[524px] w-1/2">
+        <div className="mx-auto max-w-7xl px-8 pt-24 lg:px-4">
+          <div className="flex w-full flex-col justify-center border-2 border-white/60 lg:flex-row">
+            <div className="flex h-min w-full gap-8">
+              <div className="w-1/2 lg:h-[524px]">
                 <Image
                   src={pic1}
                   className="h-full object-cover grayscale"
                   alt="neosec"
                 ></Image>
               </div>
-              <div className="h-[524px] w-1/2">
+              <div className="w-1/2 lg:h-[524px]">
                 <Image
                   src={pic2}
                   className="h-full object-cover grayscale"
@@ -142,23 +142,23 @@ export default function Home() {
                 ></Image>
               </div>
             </div>
-            <div className="flex w-1/2 flex-col justify-center gap-8 px-24">
-              <div className="w-fit border border-white/20 bg-black p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:text-white/60">
+            <div className="flex w-full flex-col items-center justify-center gap-8 px-24 py-8 lg:items-start lg:py-0">
+              <div className="mx-auto w-fit border border-white/20 bg-black p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:text-white/60 lg:mx-0">
                 leading by example{" "}
               </div>
-              <div className="flex flex-col gap-2 text-start">
+              <div className="flex flex-wrap gap-2 text-center lg:flex-col lg:text-left">
                 <h1
-                  className={`text-5xl font-semibold tracking-tight text-white ${pop.className}`}
+                  className={`text-4xl font-semibold tracking-tight text-white lg:text-5xl ${pop.className}`}
                 >
                   Experienced And
                 </h1>
                 <h2
-                  className={`text-5xl font-semibold tracking-tight text-white/70 ${pop.className}`}
+                  className={`text-4xl font-semibold tracking-tight text-white/70 lg:text-5xl ${pop.className}`}
                 >
                   Trusted
                 </h2>
               </div>
-              <p className="prose prose-base text-white/70">
+              <p className="prose prose-base text-left text-white/70">
                 NeoSec leads in cybersecurity, continuously updating methods to
                 counter emerging threats. Our commitment to innovation ensures
                 your organization benefits from the latest technologies. Our
@@ -170,9 +170,9 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto max-w-7xl px-8 py-32">
-          <div className="flex w-full justify-center text-center text-white">
-            <div className="flex flex-col items-center justify-center gap-2 border-r border-white/40 px-16 py-8">
+        <div className="mx-auto px-8 py-32">
+          <div className="flex w-full flex-wrap items-start justify-center gap-8 text-center text-white lg:flex-row lg:justify-center lg:gap-16">
+            <div className="flex flex-col items-center justify-center gap-2 border-r border-transparent py-8 lg:border-white/40 lg:pr-8">
               <h1
                 className={`${pop.className} text-5xl font-semibold antialiased`}
               >
@@ -180,7 +180,7 @@ export default function Home() {
               </h1>
               <h1>years of experience</h1>
             </div>
-            <div className="flex flex-col items-center justify-center gap-2 border-r border-white/40 px-16 py-8">
+            <div className="flex flex-col items-center justify-center gap-2 border-r border-transparent py-8 lg:border-white/40 lg:pr-8">
               <h1
                 className={`${pop.className} text-5xl font-semibold antialiased`}
               >
@@ -188,7 +188,7 @@ export default function Home() {
               </h1>
               <h1>clients helped</h1>
             </div>
-            <div className="flex flex-col items-center justify-center gap-2 border-r border-white/40 px-16 py-8">
+            <div className="flex flex-col items-center justify-center gap-2 border-r border-transparent py-8 lg:border-white/40 lg:pr-8">
               <h1
                 className={`${pop.className} text-5xl font-semibold antialiased`}
               >
@@ -196,7 +196,7 @@ export default function Home() {
               </h1>
               <h1>funds recovered</h1>
             </div>
-            <div className="flex flex-col items-center justify-center gap-2 px-16 py-8">
+            <div className="flex flex-col items-center justify-center gap-2 py-8">
               <h1
                 className={`${pop.className} text-5xl font-semibold antialiased`}
               >
@@ -209,7 +209,7 @@ export default function Home() {
       </section>
       <section className="bg-black">
         <div className="mx-auto max-w-7xl py-24">
-          <div className="flex items-center justify-center gap-12">
+          <div className="flex flex-col items-center justify-center gap-12 px-4 lg:flex-row">
             <div className="flex flex-col gap-8 px-8">
               <div className="flex flex-col gap-2 px-8 text-start">
                 <h1
@@ -230,7 +230,7 @@ export default function Home() {
                 results in every industry.
               </p>
             </div>
-            <div className="flex h-fit min-w-[720px] flex-col gap-4 bg-gradient-to-br from-zinc-900 to-transparent p-8">
+            <div className="flex h-fit max-w-[720px] flex-col gap-4 bg-gradient-to-br from-zinc-900 to-transparent p-8">
               <h1 className="text-xl font-medium text-white">{`Industries We Help`}</h1>
               <div className="flex flex-wrap gap-4">
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
@@ -263,27 +263,27 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto max-w-7xl py-24">
+        <div className="mx-auto max-w-7xl px-4 py-24">
           <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-zinc-700 to-transparent px-8 py-16">
-            <div className="flex gap-4">
+            <div className="flex gap-2 md:gap-4">
               <span
-                className={`text-5xl font-semibold tracking-tight text-white ${pop.className}`}
+                className={`text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
               >
                 Discover The
               </span>
               <span
-                className={`text-5xl font-semibold tracking-tight text-white/70 ${pop.className}`}
+                className={`text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
               >
                 Undiscoverable
               </span>
             </div>
-            <p className="prose prose-base px-8 text-center text-white/70">
+            <p className="prose prose-sm px-8 text-center text-white/70 md:prose-base">
               {`Secure critical information with NeoSec's elite
               intelligence services. Contact us today!`}
             </p>
             <a
               href="mailto:info@neosec.tech"
-              className="border border-white/20 bg-black px-12 py-6 uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black"
+              className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-base"
             >
               reach our team
             </a>

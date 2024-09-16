@@ -34,11 +34,11 @@ const Accordion = ({ items }: Props) => {
       {items.map((item, index) => (
         <div
           key={index + item.firstText.length + item.secondText.length}
-          className={`w-full ${activeIndex[index] ? "text-white" : "text-white/70"}`}
+          className={`w-full ${activeIndex[index] ? "text-white" : "text-white/70"} `}
         >
           <button
             onClick={() => toggleAccordion(index)}
-            className="flex w-full items-center justify-between px-4 py-3 font-semibold"
+            className="flex w-full items-center justify-between px-4 py-4 text-left font-semibold md:py-3"
           >
             <span>{item.firstText}</span>
             <span className="transition-transform duration-300">
