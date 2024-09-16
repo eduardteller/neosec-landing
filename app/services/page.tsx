@@ -30,17 +30,19 @@ const PageServices = () => {
           }}
         ></div>
         <div className="absolute inset-0 z-[1] h-full w-full bg-gradient-to-br from-white/5 to-transparent"></div>
-        <div className="relative z-10 flex items-center justify-between px-8 py-6">
-          <Link
-            href={"/"}
-            className="text-xl font-bold uppercase tracking-tight text-white/60 duration-300 hover:text-white md:text-3xl"
-          >
-            <span>NEO</span>
-            <span className="text-white/40">SEC</span>
-          </Link>
+        <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-6">
+          <div>
+            <Link
+              href={"/"}
+              className="text-xl font-bold uppercase tracking-tight text-white/60 duration-300 hover:text-white md:text-3xl"
+            >
+              <span>NEO</span>
+              <span className="text-white/40">SEC</span>
+            </Link>
+          </div>
           <a
             href="mailto:info@neosec.tech"
-            className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black lg:px-12 lg:py-6"
+            className="border border-white/20 bg-black px-6 py-3 text-xs uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-sm"
           >
             CONTACT US
           </a>
