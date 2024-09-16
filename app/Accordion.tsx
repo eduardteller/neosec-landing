@@ -50,7 +50,9 @@ const Accordion = ({ items }: Props) => {
             </span>
           </button>
           <div
-            ref={(el) => (contentRefs.current[index] = el)}
+            ref={(el) => {
+              contentRefs.current[index] = el;
+            }}
             style={{
               maxHeight: activeIndex[index]
                 ? contentRefs.current[index]?.scrollHeight
