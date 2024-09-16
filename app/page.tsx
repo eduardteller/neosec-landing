@@ -172,7 +172,7 @@ export default function Home() {
       <section className="bg-black">
         <div className="mx-auto px-4 py-32 md:px-8">
           <div className="flex w-full flex-wrap items-start justify-center gap-8 text-center text-white lg:flex-row lg:justify-center lg:gap-16">
-            <div className="flex flex-col items-center justify-center gap-2 border-r border-transparent py-8 lg:border-white/40 lg:pr-8">
+            <div className="flex flex-col items-center justify-center gap-2 py-8">
               <h1
                 className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
               >
@@ -180,7 +180,7 @@ export default function Home() {
               </h1>
               <h1>years of experience</h1>
             </div>
-            <div className="flex flex-col items-center justify-center gap-2 border-r border-transparent py-8 lg:border-white/40 lg:pr-8">
+            <div className="flex flex-col items-center justify-center gap-2 py-8 lg:pr-8">
               <h1
                 className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
               >
@@ -188,7 +188,7 @@ export default function Home() {
               </h1>
               <h1>clients helped</h1>
             </div>
-            <div className="flex flex-col items-center justify-center gap-2 border-r border-transparent py-8 lg:border-white/40 lg:pr-8">
+            <div className="flex flex-col items-center justify-center gap-2 py-8 lg:pr-8">
               <h1
                 className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
               >
@@ -230,7 +230,7 @@ export default function Home() {
                 results in every industry.
               </p>
             </div>
-            <div className="flex h-fit flex-col gap-4 bg-gradient-to-br from-zinc-900 to-transparent p-8 lg:w-[720px]">
+            <div className="flex h-fit flex-col gap-4 bg-gradient-to-br from-zinc-900 to-transparent p-8 lg:min-w-[720px]">
               <h1 className="text-xl font-medium text-white">{`Industries We Help`}</h1>
               <div className="flex flex-wrap gap-4">
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
