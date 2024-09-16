@@ -121,7 +121,7 @@ const PageServices = () => {
       </section>
       <section className="bg-black">
         <div id="section1" className="mx-auto max-w-6xl py-24">
-          <div className="flex flex-col items-center justify-center gap-8 px-8 md:flex-row md:items-start">
+          <div className="flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:items-start md:px-8">
             <div className="h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px]">
               <Image
                 src={pic1}
@@ -182,7 +182,7 @@ const PageServices = () => {
           </div>
         </div>
         <div id="section2" className="mx-auto max-w-6xl py-24">
-          <div className="flex flex-col items-center justify-center gap-8 px-8 md:flex-row md:items-start">
+          <div className="flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:items-start md:px-8">
             <div className="flex-1">
               <div className="mb-4 flex w-full flex-wrap gap-2 md:flex-col">
                 <span
@@ -243,7 +243,7 @@ const PageServices = () => {
           </div>
         </div>
         <div id="section3" className="mx-auto max-w-6xl py-24">
-          <div className="flex flex-col items-center justify-center gap-8 px-8 md:flex-row md:items-start">
+          <div className="flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:items-start md:px-8">
             <div className="h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px]">
               <Image
                 src={pic4}
@@ -284,7 +284,7 @@ const PageServices = () => {
           </div>
         </div>
         <div id="section4" className="mx-auto max-w-6xl py-24">
-          <div className="flex flex-col items-center justify-center gap-8 px-8 md:flex-row md:items-start">
+          <div className="flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:items-start md:px-8">
             <div className="flex-1">
               <div className="mb-4 flex w-full flex-wrap gap-2 md:flex-col">
                 <span

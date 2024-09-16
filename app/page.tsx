@@ -74,7 +74,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 py-24">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 py-24 md:px-8">
           <div className="w-fit border border-white/20 bg-black p-4 text-xs tracking-[0.2em] text-white duration-300 hover:text-white/60">
             IMPOSSIBLE MADE POSSIBLE{" "}
           </div>
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto max-w-7xl px-4 pt-24 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pt-24 md:px-8 lg:px-8">
           <div className="flex w-full flex-col justify-center border-2 border-white/60 lg:flex-row">
             <div className="flex h-min w-full gap-8">
               <div className="w-1/2 lg:h-[524px]">
@@ -143,7 +143,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex w-full flex-col items-center justify-center gap-8 px-8 py-8 md:px-24 lg:items-start lg:py-0">
-              <div className="mx-auto w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:text-white/60 md:p-4 lg:mx-0">
+              <div className="mx-auto w-fit border border-white/20 bg-black p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:text-white/60 lg:mx-0">
                 leading by example{" "}
               </div>
               <div className="flex flex-wrap justify-center gap-2 text-center lg:flex-col lg:text-left">
@@ -170,11 +170,11 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto px-8 py-32">
+        <div className="mx-auto px-4 py-32 md:px-8">
           <div className="flex w-full flex-wrap items-start justify-center gap-8 text-center text-white lg:flex-row lg:justify-center lg:gap-16">
             <div className="flex flex-col items-center justify-center gap-2 border-r border-transparent py-8 lg:border-white/40 lg:pr-8">
               <h1
-                className={`${pop.className} text-5xl font-semibold antialiased`}
+                className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
               >
                 10 +
               </h1>
@@ -182,7 +182,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-center gap-2 border-r border-transparent py-8 lg:border-white/40 lg:pr-8">
               <h1
-                className={`${pop.className} text-5xl font-semibold antialiased`}
+                className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
               >
                 100 +
               </h1>
@@ -190,7 +190,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-center gap-2 border-r border-transparent py-8 lg:border-white/40 lg:pr-8">
               <h1
-                className={`${pop.className} text-5xl font-semibold antialiased`}
+                className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
               >
                 $ 10 M +
               </h1>
@@ -198,7 +198,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-center gap-2 py-8">
               <h1
-                className={`${pop.className} text-5xl font-semibold antialiased`}
+                className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
               >
                 2.3 M +
               </h1>
@@ -209,9 +209,9 @@ export default function Home() {
       </section>
       <section className="bg-black">
         <div className="mx-auto max-w-7xl py-24">
-          <div className="flex flex-col items-center justify-center gap-12 px-4 lg:flex-row">
-            <div className="flex flex-col gap-8 px-8">
-              <div className="flex flex-wrap gap-2 text-start md:px-8">
+          <div className="flex flex-col items-center justify-center gap-12 px-4 md:px-8 lg:flex-row">
+            <div className="flex flex-col gap-8">
+              <div className="flex flex-wrap gap-2 text-start">
                 <h1
                   className={`text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
                 >
@@ -223,14 +223,14 @@ export default function Home() {
                   Serve
                 </h2>
               </div>
-              <p className="prose prose-base max-w-none text-white/70 md:px-8">
+              <p className="prose prose-base max-w-none text-white/70">
                 NeoSec excels across all sectors, providing unparalleled
                 intelligence solutions. From legal and financial to corporate,
                 government, healthcare, energy, tech, and retail, we deliver
                 results in every industry.
               </p>
             </div>
-            <div className="flex h-fit max-w-[720px] flex-col gap-4 bg-gradient-to-br from-zinc-900 to-transparent p-8">
+            <div className="flex h-fit flex-col gap-4 bg-gradient-to-br from-zinc-900 to-transparent p-8 lg:w-[720px]">
               <h1 className="text-xl font-medium text-white">{`Industries We Help`}</h1>
               <div className="flex flex-wrap gap-4">
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
@@ -263,8 +263,8 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto max-w-7xl px-4 py-24">
-          <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-zinc-700 to-transparent px-8 py-16">
+        <div className="mx-auto max-w-7xl px-4 py-24 md:px-8">
+          <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-zinc-700 to-transparent px-8 py-16 md:gap-8">
             <div className="flex flex-wrap justify-center gap-2 md:justify-start md:gap-4">
               <span
                 className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
