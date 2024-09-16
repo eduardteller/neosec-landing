@@ -47,7 +47,7 @@ export default function Home() {
                 Cybersecurity Redefined
               </h1>
               <h1
-                className={`${pop.className} mt-2 whitespace-nowrap text-2xl font-semibold uppercase tracking-tight text-white/70 antialiased sm:text-3xl md:mt-4 md:text-5xl lg:text-7xl`}
+                className={`${pop.className} mt-2 text-2xl font-semibold uppercase tracking-tight text-white/70 antialiased sm:text-3xl md:mt-4 md:whitespace-nowrap md:text-5xl lg:text-7xl`}
               >
                 Proactive. Adaptive. Relentless.
               </h1>
@@ -78,19 +78,19 @@ export default function Home() {
           <div className="w-fit border border-white/20 bg-black p-4 text-xs tracking-[0.2em] text-white duration-300 hover:text-white/60">
             IMPOSSIBLE MADE POSSIBLE{" "}
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-wrap justify-center gap-2 lg:flex-col">
             <h1
-              className={`text-center text-5xl font-semibold tracking-tight text-white ${pop.className}`}
+              className={`text-center text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
             >
               Strategic Execution
             </h1>
             <h2
-              className={`text-center text-5xl font-semibold tracking-tight text-white/70 ${pop.className}`}
+              className={`text-center text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
             >
               Global Influence
             </h2>
           </div>
-          <div className="prose prose-base mt-12 flex max-w-none flex-col items-start justify-center gap-20 font-light text-white/80 md:flex-row">
+          <div className="prose prose-base mt-8 flex max-w-none flex-col items-start justify-center gap-10 font-light text-white/80 md:mt-12 md:flex-row md:gap-20">
             <p className="m-0">
               {`   At NeoSec, we excel in achieving what others consider
               unfeasible. We specialize in an array of services including
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto max-w-7xl px-8 pt-24 lg:px-4">
+        <div className="mx-auto max-w-7xl px-4 pt-24 lg:px-8">
           <div className="flex w-full flex-col justify-center border-2 border-white/60 lg:flex-row">
             <div className="flex h-min w-full gap-8">
               <div className="w-1/2 lg:h-[524px]">
@@ -142,18 +142,18 @@ export default function Home() {
                 ></Image>
               </div>
             </div>
-            <div className="flex w-full flex-col items-center justify-center gap-8 px-24 py-8 lg:items-start lg:py-0">
-              <div className="mx-auto w-fit border border-white/20 bg-black p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:text-white/60 lg:mx-0">
+            <div className="flex w-full flex-col items-center justify-center gap-8 px-8 py-8 md:px-24 lg:items-start lg:py-0">
+              <div className="mx-auto w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:text-white/60 md:p-4 lg:mx-0">
                 leading by example{" "}
               </div>
-              <div className="flex flex-wrap gap-2 text-center lg:flex-col lg:text-left">
+              <div className="flex flex-wrap justify-center gap-2 text-center lg:flex-col lg:text-left">
                 <h1
-                  className={`text-4xl font-semibold tracking-tight text-white lg:text-5xl ${pop.className}`}
+                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-4xl lg:text-5xl ${pop.className}`}
                 >
                   Experienced And
                 </h1>
                 <h2
-                  className={`text-4xl font-semibold tracking-tight text-white/70 lg:text-5xl ${pop.className}`}
+                  className={`text-3xl font-semibold tracking-tight text-white/70 md:text-4xl lg:text-5xl ${pop.className}`}
                 >
                   Trusted
                 </h2>
@@ -211,19 +211,19 @@ export default function Home() {
         <div className="mx-auto max-w-7xl py-24">
           <div className="flex flex-col items-center justify-center gap-12 px-4 lg:flex-row">
             <div className="flex flex-col gap-8 px-8">
-              <div className="flex flex-col gap-2 px-8 text-start">
+              <div className="flex flex-wrap gap-2 text-start md:px-8">
                 <h1
-                  className={`text-5xl font-semibold tracking-tight text-white ${pop.className}`}
+                  className={`text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
                 >
                   Industries We
                 </h1>
                 <h2
-                  className={`text-5xl font-semibold tracking-tight text-white/70 ${pop.className}`}
+                  className={`text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
                 >
                   Serve
                 </h2>
               </div>
-              <p className="prose prose-base px-8 text-white/70">
+              <p className="prose prose-base max-w-none text-white/70 md:px-8">
                 NeoSec excels across all sectors, providing unparalleled
                 intelligence solutions. From legal and financial to corporate,
                 government, healthcare, energy, tech, and retail, we deliver
@@ -265,9 +265,9 @@ export default function Home() {
       <section className="bg-black">
         <div className="mx-auto max-w-7xl px-4 py-24">
           <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-zinc-700 to-transparent px-8 py-16">
-            <div className="flex gap-2 md:gap-4">
+            <div className="flex flex-wrap justify-center gap-2 md:justify-start md:gap-4">
               <span
-                className={`text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
+                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
               >
                 Discover The
               </span>
