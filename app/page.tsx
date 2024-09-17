@@ -1,8 +1,9 @@
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import pic2 from "../public/analysis-vertical.webp";
-import pic1 from "../public/binary-beaming-vertical.webp";
+// import pic2 from "../public/pexels-saksham-choudhary-109710-2036656.jpg";
+// import pic2 from "../public/pexels-pixabay-60504.jpg";
+import pic2 from "../public/blurface.jpg";
 const pop = Poppins({
   subsets: ["latin"],
   weight: ["700", "100", "200", "300", "400", "500", "600", "800", "900"],
@@ -44,17 +45,17 @@ export default function Home() {
               <h1
                 className={`${pop.className} whitespace-nowrap text-2xl font-semibold uppercase tracking-tight antialiased sm:text-3xl md:text-5xl lg:text-7xl`}
               >
-                Cybersecurity Redefined
+                Fortify Your Future: Smarter. Faster.
               </h1>
               <h1
                 className={`${pop.className} mt-2 text-2xl font-semibold uppercase tracking-tight text-white/70 antialiased sm:text-3xl md:mt-4 md:whitespace-nowrap md:text-5xl lg:text-7xl`}
               >
-                Proactive. Adaptive. Relentless.
+                Unbreakable Cybersecurity.
               </h1>
             </div>
-            <p className="prose prose-base max-w-none text-base tracking-wider text-white/70 md:prose-lg">
-              Securing your digital presence when others fall short - even in
-              the most challenging scenarios.{" "}
+            <p className="prose prose-base max-w-none text-base text-white/70 md:prose-lg md:leading-loose md:tracking-wider">
+              Protecting your digital world where others fail—delivering
+              security that thrives in even the toughest conditions.{" "}
             </p>
             <div className="flex gap-4">
               <Link
@@ -74,60 +75,34 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 py-24 md:px-8">
-          <div className="w-fit border border-white/20 bg-black p-4 text-xs tracking-[0.2em] text-white duration-300 hover:text-white/60">
-            IMPOSSIBLE MADE POSSIBLE{" "}
+        <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-4 py-24 md:items-center md:px-8">
+          <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-widest text-white duration-300 hover:text-white/60">
+            Turning the Impossible into Reality{" "}
           </div>
-          <div className="flex flex-wrap justify-center gap-2 lg:flex-col">
+          <div className="flex flex-col items-start justify-center gap-2 md:w-[576px] md:items-center">
             <h1
-              className={`text-center text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
+              className={`text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl ${pop.className}`}
             >
-              Strategic Execution
+              Precision in Action
             </h1>
             <h2
-              className={`text-center text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
+              className={`text-3xl font-semibold tracking-tight text-white/70 sm:text-4xl md:text-5xl ${pop.className}`}
             >
-              Global Influence
+              Power on a Global Scale
             </h2>
           </div>
-          <div className="prose prose-base mt-8 flex max-w-none flex-col items-start justify-center gap-10 font-light text-white/80 md:mt-12 md:flex-row md:gap-20">
-            <p className="m-0">
-              {`   At NeoSec, we excel in achieving what others consider
-              unfeasible. We specialize in an array of services including
-              high-profile investigations of white-collar crime, digital threat
-              intelligence, digital footprint removal, and the recovery of
-              digital assets. Utilizing advanced technology and expert
-              operatives, we secure elusive evidence that others cannot obtain.
-              Utilizing advanced technology and expert operatives, we secure
-              evidence that others can not obtain through complex tactics. Our
-              strategic approach integrates extensive knowledge, diverse
-              expertise, and an international network to deliver comprehensive,
-              customized solutions for each client, revealing concealed truths
-              and providing the critical insights you require for success.`}
-            </p>
-            <p className="m-0">
-              {`Our cutting-edge mentoring program equips you with the essential
-              modern tools needed to thrive in today’s world. The program is
-              divided into three comprehensive chapters: Phase I for
-              intermediates, Phase II for advanced users, and Phase III for
-              veteran users. In Phase I, intermediates are introduced to
-              fundamental concepts and techniques, laying a solid foundation.
-              Phase II delves deeper, providing advanced users with complex
-              strategies and practical applications. Phase III is designed for
-              veterans, offering specialized knowledge and sophisticated
-              methodologies. Through private methodologies, our course offers an
-              easy entry point and valuable knowledge tailored to all skill
-              levels, ensuring you gain the experience necessary to excel in the
-              field.`}
+          <div className="prose prose-base mt-8 flex max-w-xl flex-col items-start justify-center leading-loose text-white/80 md:mt-12">
+            <p>
+              {`At NeoSec, we thrive where others falter. Specializing in high-stakes white-collar investigations, digital threat intelligence, digital footprint removal, and asset recovery, we achieve what most deem impossible. Armed with cutting-edge technology and elite operatives, we uncover critical evidence that others simply cannot. Our tailored strategies combine deep industry knowledge, global expertise, and an international network to reveal hidden truths and deliver the actionable insights you need to succeed.`}
             </p>
           </div>
         </div>
       </section>
       <section className="bg-black">
-        <div className="mx-auto max-w-7xl px-4 pt-24 md:px-8 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-24 md:px-8 lg:px-8">
           <div className="flex w-full flex-col justify-center border-2 border-white/60 lg:flex-row">
-            <div className="flex h-min w-full gap-8">
-              <div className="w-1/2 lg:h-[524px]">
+            <div className="flex w-full p-4">
+              {/* <div className="w-1/2 lg:h-[524px]">
                 <Image
                   src={pic1}
                   className="h-full object-cover grayscale"
@@ -140,73 +115,40 @@ export default function Home() {
                   className="h-full object-cover grayscale"
                   alt="neosec"
                 ></Image>
-              </div>
+              </div> */}
+              <Image
+                src={pic2}
+                className="object-cover grayscale"
+                alt="neosec"
+              ></Image>
             </div>
             <div className="flex w-full flex-col items-center justify-center gap-8 px-8 py-8 md:px-24 lg:items-start lg:py-0">
-              <div className="mx-auto w-fit border border-white/20 bg-black p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:text-white/60 lg:mx-0">
-                leading by example{" "}
+              <div className="mx-auto w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:text-white/60 lg:mx-0">
+                Setting the Gold Standard{" "}
               </div>
               <div className="flex flex-wrap justify-center gap-2 text-center lg:flex-col lg:text-left">
                 <h1
                   className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-4xl lg:text-5xl ${pop.className}`}
                 >
-                  Experienced And
+                  Proven Expertise
                 </h1>
                 <h2
                   className={`text-3xl font-semibold tracking-tight text-white/70 md:text-4xl lg:text-5xl ${pop.className}`}
                 >
-                  Trusted
+                  You Can Rely On
                 </h2>
               </div>
-              <p className="prose prose-base text-left text-white/70">
-                NeoSec leads in cybersecurity, continuously updating methods to
-                counter emerging threats. Our commitment to innovation ensures
-                your organization benefits from the latest technologies. Our
-                mentoring program offers a three-part course for all skill
-                levels, providing essential modern tools and knowledge.
+              <p className="prose prose-base text-left leading-loose text-white/70">
+                {`NeoSec is at the forefront of cybersecurity, relentlessly
+                evolving our methods to outsmart emerging threats. Our
+                dedication to innovation guarantees your organization stays
+                protected with cutting-edge technology. `}
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-black">
-        <div className="mx-auto px-4 py-32 md:px-8">
-          <div className="flex w-full flex-wrap items-start justify-center gap-8 text-center text-white lg:flex-row lg:justify-center lg:gap-16">
-            <div className="flex flex-col items-center justify-center gap-2 py-8">
-              <h1
-                className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
-              >
-                10 +
-              </h1>
-              <h1>years of experience</h1>
-            </div>
-            <div className="flex flex-col items-center justify-center gap-2 py-8 lg:pr-8">
-              <h1
-                className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
-              >
-                100 +
-              </h1>
-              <h1>clients helped</h1>
-            </div>
-            <div className="flex flex-col items-center justify-center gap-2 py-8 lg:pr-8">
-              <h1
-                className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
-              >
-                $ 10 M +
-              </h1>
-              <h1>funds recovered</h1>
-            </div>
-            <div className="flex flex-col items-center justify-center gap-2 py-8">
-              <h1
-                className={`${pop.className} text-3xl font-semibold antialiased md:text-5xl`}
-              >
-                2.3 M +
-              </h1>
-              <h1>intercepted leaks</h1>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <section className="bg-black">
         <div className="mx-auto max-w-7xl py-24">
           <div className="flex flex-col items-center justify-center gap-12 px-4 md:px-8 lg:flex-row">
@@ -215,23 +157,29 @@ export default function Home() {
                 <h1
                   className={`text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
                 >
-                  Industries We
+                  Diverse Industries
                 </h1>
                 <h2
                   className={`text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
                 >
-                  Serve
+                  Tailored Solutions
                 </h2>
               </div>
               <p className="prose prose-base max-w-none text-white/70">
-                NeoSec excels across all sectors, providing unparalleled
-                intelligence solutions. From legal and financial to corporate,
-                government, healthcare, energy, tech, and retail, we deliver
-                results in every industry.
+                {`NeoSec stands at the pinnacle of excellence, delivering top-tier
+                intelligence solutions across a multitude of sectors. Whether
+                it's legal, financial, corporate, government, healthcare,
+                energy, tech, or retail, our expertise translates into tangible
+                results for every industry we touch. Discover unparalleled
+                performance with NeoSec, your partner in success across all
+                domains`}
               </p>
             </div>
             <div className="flex h-fit flex-col gap-4 bg-gradient-to-br from-zinc-900 to-transparent p-8 lg:min-w-[720px]">
-              <h1 className="text-xl font-medium text-white">{`Industries We Help`}</h1>
+              <h1 className="text-xl font-medium text-white">
+                {`Empowering Every`}
+                <span className="ml-1 text-white/70">Industry</span>
+              </h1>
               <div className="flex flex-wrap gap-4">
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
                   governments
@@ -274,18 +222,17 @@ export default function Home() {
               <span
                 className={`text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
               >
-                Undiscoverable
+                Ultimate Protection
               </span>
             </div>
-            <p className="prose prose-sm px-8 text-center text-white/70 md:prose-base">
-              {`Secure critical information with NeoSec's elite
-              intelligence services. Contact us today!`}
+            <p className="prose prose-sm px-8 text-center text-white/70 md:prose-base md:leading-loose">
+              {`Safeguard your most valuable assets with NeoSec's elite intelligence services. Reach out to us today for unmatched protection!`}
             </p>
             <a
               href="mailto:info@neosec.tech"
               className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-base"
             >
-              reach our team
+              reach us
             </a>
           </div>
         </div>

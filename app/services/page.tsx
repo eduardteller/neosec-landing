@@ -8,10 +8,10 @@ import {
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import pic3 from "../../public/cyber-investigations-and-asset-recovery.webp";
-import pic1 from "../../public/digital-footprint-removal.webp";
 import pic4 from "../../public/digital-footprint.webp";
 import pic2 from "../../public/digital-protection-concierge-service.webp";
+import pic3 from "../../public/pexels-alesiakozik-6765371.jpg";
+import pic1 from "../../public/pexels-pixabay-207580.jpg";
 import Accordion from "../Accordion";
 import { bgImageData } from "../page";
 const pop = Poppins({
@@ -34,7 +34,7 @@ const PageServices = () => {
           <div>
             <Link
               href={"/"}
-              className="text-xl font-bold uppercase tracking-tight text-white/60 duration-300 hover:text-white md:text-3xl"
+              className="text-xl font-bold uppercase tracking-tight text-white/60 antialiased duration-300 hover:text-white md:text-3xl"
             >
               <span>NEO</span>
               <span className="text-white/40">SEC</span>
@@ -48,23 +48,23 @@ const PageServices = () => {
           </a>
         </div>
         <div className="relative z-10 flex w-full flex-col items-center gap-14 px-4 py-8">
-          <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-transparent hover:text-white/60 md:p-4">
-            null services{" "}
+          <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-widest text-white duration-300 hover:bg-transparent hover:text-white/60">
+            services{" "}
           </div>
-          <div className="flex gap-2 md:gap-4">
+          <div className="flex gap-2">
             <span
               className={`whitespace-nowrap text-4xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
             >
-              Services We
+              Discover Our
             </span>
             <span
               className={`text-4xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
             >
-              Offer
+              Services
             </span>
           </div>
           <p className="prose prose-base max-w-3xl px-8 text-center leading-loose text-white/70">
-            {`Comprehensive cybersecurity solutions, including Digital Footprint Removal, Digital Protection Concierge Services, and Cyber Threat Intelligence, to safeguard your organization's digital presence.`}
+            {`Unlock Complete Cybersecurity Mastery with our all-encompassing solutions. From Digital Footprint Removal and bespoke Digital Protection Concierge Services to advanced Cyber Threat Intelligence, we ensure your organization's digital fortress is impenetrable. `}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 lg:flex-row">
             <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
@@ -128,11 +128,11 @@ const PageServices = () => {
               <Image
                 src={pic1}
                 alt="cybersecurity"
-                className="object-cover"
+                className="object-cover grayscale"
               ></Image>
             </div>
             <div className="flex-1">
-              <div className="mb-4 flex w-full flex-wrap gap-2">
+              <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:justify-start">
                 <span
                   className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
                 >
@@ -148,35 +148,35 @@ const PageServices = () => {
                 items={[
                   {
                     firstText: "Company Presence Analysis",
-                    secondText: `We analyze your company's online presence to identify vulnerabilities such as outdated security practices, publicly accessible sensitive information, and potential attack vectors.`,
+                    secondText: `We identify vulnerabilities like outdated security measures, exposed sensitive information, and potential attack vectors, ensuring your digital fortress remains unbreachable.`,
                   },
                   {
                     firstText: "Exposure Assessment",
-                    secondText: `We assess the likelihood of senior officials being targeted by SIM-swap or communications takeover attacks, evaluating their publicly available information and potential vulnerabilities.`,
+                    secondText: `Guard your leadership against SIM-swap and communication takeover attacks. Our expert evaluation scrutinizes publicly available information and identifies potential vulnerabilities, ensuring your senior officials stay protected against targeted threats.`,
                   },
                   {
                     firstText: "Senior Official Security Review",
-                    secondText: `We review senior officials' accounts to ensure robust security, including 2FA verification, checking for outdated recovery options, and evaluating password hygiene. We also identify exposed information in hacked-data search engines.`,
+                    secondText: `Shield your senior officials with our meticulous account security reviews. We enforce robust measures like 2FA verification, audit outdated recovery options, and assess password integrity. Plus, we scour hacked-data search engines to uncover and secure exposed information. Ensure top-tier protection for your highest-ranking team members.`,
                   },
                   {
                     firstText: "Dark Web Surveillance",
-                    secondText: `We continuously monitor the dark web for mentions of your company and sensitive data, track data breaches, and profile threat actors targeting your business.`,
+                    secondText: `Stay ahead of cyber threats with our relentless dark web surveillance. We monitor for mentions of your company and sensitive data, track data breaches in real time, and profile threat actors aiming at your business. Ensure your security with proactive intelligence and seamless protection.`,
                   },
                   {
                     firstText: "Data Breach Detection",
-                    secondText: `We'll detect any data breaches involving your company's information. This involves identifying and analyzing any compromised data that appears on the dark web, allowing us to take swift action to mitigate the impact.`,
+                    secondText: `Safeguard your business with our cutting-edge breach detection services. We diligently scour the dark web for any compromised data related to your company, enabling us to swiftly identify and analyze breaches. Our rapid response ensures damage is minimized, keeping your information secure.`,
                   },
                   {
                     firstText: "Threat Actor Profiling",
-                    secondText: `We'll profile threat actors who are discussing or targeting your company on the dark web. This includes understanding their tactics, techniques, and procedures (TTPs) to better defend against potential attacks.`,
+                    secondText: `We delve deep into the dark web to identify and analyze attackers targeting your company, understanding their tactics, techniques, and procedures (TTPs). Arm your defenses with invaluable insights and stay one step ahead of potential threats.`,
                   },
                   {
                     firstText: "Typosquatting & Homoglyph Attacks",
-                    secondText: `We identify and mitigate risks from attackers using visually similar characters or slight misspellings to create deceptive domain names. We prevent phishing campaigns designed to deceive your employees and customers.`,
+                    secondText: `Stop phishing threats in their tracks with our advanced detection of deceptive domain names. We identify and neutralize risks from attackers using look-alike characters or subtle misspellings. Protect your employees and customers by preventing malicious campaigns before they strike.`,
                   },
                   {
                     firstText: "Brand Protection",
-                    secondText: `We monitor unauthorized use of your brand and intellectual property online, identifying fake websites, social media profiles, and other digital assets that could harm your brand's reputation.`,
+                    secondText: `We identify and dismantle fake websites, social media profiles, and rogue digital assets, ensuring that your brand and intellectual property remain unblemished and respected.`,
                   },
                 ]}
               ></Accordion>
@@ -185,12 +185,12 @@ const PageServices = () => {
         </div>
         <div id="section2" className="mx-auto max-w-6xl py-24">
           <div className="flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:items-start md:px-8">
-            <div className="flex-1">
-              <div className="mb-4 flex w-full flex-wrap gap-2 md:flex-col">
+            <div className="order-2 flex-1 md:order-1">
+              <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:justify-start">
                 <span
                   className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
                 >
-                  Digital Protection Concierge
+                  Digital Protection
                 </span>
                 <span
                   className={`text-3xl font-semibold tracking-tight text-white/70 ${pop.className} antialiased`}
@@ -202,44 +202,44 @@ const PageServices = () => {
                 items={[
                   {
                     firstText: "Personalized Digital Security Solutions",
-                    secondText: `Tailored security measures that address unique risks faced by individuals.`,
+                    secondText: `Customized security solutions designed to tackle the unique risks each individual faces. Our tailored measures ensure personalized protection that's as distinctive as you are.`,
                   },
                   {
                     firstText: "Comprehensive Protection",
-                    secondText: `Extensive online searches and background checks to secure your digital assets and personal safety.`,
+                    secondText: `Comprehensive online investigations and background checks to safeguard your digital assets and ensure your personal safety. Trust us to leave no stone unturned in protecting what matters most.`,
                   },
                   {
                     firstText: "Dark Web Monitoring",
-                    secondText: `We scan the dark web for exposed information to protect against identity theft and address data breaches.`,
+                    secondText: `Protect yourself from identity theft and data breaches with our dark web scanning services. We relentlessly search for exposed information, ensuring your personal and corporate privacy remains intact and secure.`,
                   },
                   {
                     firstText: "Phishing Scams Awareness",
-                    secondText: `We help you recognize phishing scams and provide preventive measures to avoid them.`,
+                    secondText: `Stay one step ahead of cybercriminals with our expert phishing scam detection and prevention services. We'll teach you how to spot deceptive schemes and arm you with the tools and knowledge to avoid them, ensuring your digital safety.`,
                   },
                   {
                     firstText: "Securing Your Home Network",
-                    secondText: `We enhance home network security by updating settings, enabling encryption, and ensuring firmware updates.`,
+                    secondText: `Transform your home into a digital fortress with our advanced network security services. We update critical settings, activate robust encryption, and ensure timely firmware updates to safeguard your home network against potential threats.`,
                   },
                   {
                     firstText: "Protection Against Stealer Logs",
-                    secondText: `We educate on stealer logs, provide continuous monitoring, and protect against malicious software.`,
+                    secondText: `Empower yourself with our expert education on stealer logs, round-the-clock monitoring, and robust protection against malicious software. Trust us to keep your digital environment safe and secure.`,
                   },
                   {
                     firstText: "Social Media Privacy Settings",
-                    secondText: `Regularly review and update privacy settings, minimize sharing of sensitive info, and advise on trusted friend requests.`,
+                    secondText: `Keep your digital life secure with our regular privacy setting reviews, strategies to minimize sharing sensitive information, and advice on managing trusted friend requests. Stay in control and protect what matters most.`,
                   },
                   {
                     firstText: "Software Updates",
-                    secondText: `Ensure regular updates for security patches, performance enhancements, and bug fixes, and automate updates to keep your devices secure.`,
+                    secondText: `Keep your devices safeguarded and running smoothly with our proactive approach to security patches, performance enhancements, and bug fixes. Automate updates to ensure you're always protected and optimized, without lifting a finger.`,
                   },
                 ]}
               ></Accordion>
             </div>
-            <div className="h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px]">
+            <div className="order-1 h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px] md:order-2">
               <Image
                 src={pic2}
                 alt="cybersecurity"
-                className="object-cover"
+                className="object-cover grayscale"
               ></Image>
             </div>
           </div>
@@ -250,11 +250,11 @@ const PageServices = () => {
               <Image
                 src={pic4}
                 alt="cybersecurity"
-                className="object-cover"
+                className="object-cover grayscale"
               ></Image>
             </div>
             <div className="flex-1">
-              <div className="mb-4 flex w-full flex-wrap gap-2">
+              <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:justify-start">
                 <span
                   className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
                 >
@@ -270,15 +270,15 @@ const PageServices = () => {
                 items={[
                   {
                     firstText: "Monitor Your Digital Footprint",
-                    secondText: `We regularly search the internet for your personal information to identify publicly accessible data and potential risks. We set up comprehensive alerts and digital trackers to keep you informed about new mentions and emerging information related to you.`,
+                    secondText: `Stay one step ahead with our proactive personal information audits. We scour the internet to identify any publicly accessible data and potential risks, while setting up comprehensive alerts and digital trackers. Remain informed and protected as we monitor new mentions and emerging information about you in real-time.`,
                   },
                   {
                     firstText: "Remove Unwanted Information",
-                    secondText: `We reach out to websites, data brokers, and social media platforms to request the removal of your personal data, ensuring it is thoroughly deleted.`,
+                    secondText: `Protect your privacy with our diligent data removal services. We contact websites, data brokers, and social media platforms to request the thorough deletion of your personal information, ensuring your digital footprint is effectively erased.`,
                   },
                   {
                     firstText: "Manage Your Online Presence",
-                    secondText: `We adjust your privacy settings, advise on minimizing sensitive information sharing, and implement strong passwords and two-factor authentication to enhance your account security.`,
+                    secondText: `We fine-tune your privacy settings, provide guidance on minimizing sensitive information sharing, and implement robust passwords alongside two-factor authentication. Elevate your digital protection to the next level.`,
                   },
                 ]}
               ></Accordion>
@@ -287,8 +287,8 @@ const PageServices = () => {
         </div>
         <div id="section4" className="mx-auto max-w-6xl py-24">
           <div className="flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:items-start md:px-8">
-            <div className="flex-1">
-              <div className="mb-4 flex w-full flex-wrap gap-2 md:flex-col">
+            <div className="order-2 flex-1 md:order-1">
+              <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:flex-col md:justify-start">
                 <span
                   className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
                 >
@@ -304,28 +304,28 @@ const PageServices = () => {
                 items={[
                   {
                     firstText: "Helping Victims Recover Assets",
-                    secondText: `We assist scam victims by identifying the fraudsters responsible for their losses. Our team provides comprehensive resources and guidance to help victims recover their stolen assets. We stand by your side, offering the expertise needed to navigate the complexities of asset recovery.`,
+                    secondText: `Our expert team identifies the culprits behind your losses and equips you with comprehensive resources and guidance to reclaim your stolen assets. Stand strong with our support as we navigate the complexities of asset recovery together.`,
                   },
                   {
                     firstText: "Exposing Phishing Campaigns",
-                    secondText: `Phishing campaigns are increasingly sophisticated, targeting unsuspecting individuals and businesses. At NeoSec, we specialize in exposing these fraudulent schemes. Our investigations reveal the culprits and their methods, ensuring you know exactly who's behind the scam and how to protect yourself.`,
+                    secondText: `Phishing campaigns are becoming alarmingly sophisticated, preying on both individuals and businesses. At NeoSec, we specialize in unraveling these deceptive schemes. Our thorough investigations expose the fraudsters and their tactics, empowering you with the knowledge to defend yourself effectively. Trust NeoSec to reveal the hidden threats and keep you one step ahead.`,
                   },
                   {
                     firstText: "Revealing the Truth Behind Scams",
-                    secondText: `Through meticulous investigation and advanced hacking, we uncover the truth behind financial scams. Our approach reveals the hidden operations and networks of fraudsters. We then guide victims through the process of recovering their assets, providing clear and actionable steps.`,
+                    secondText: `We expose the operations and networks of fraudsters, revealing their hidden schemes. Our expert guidance then leads victims through clear and actionable steps to recover their assets, ensuring justice and peace of mind.`,
                   },
                   {
                     firstText: "Your Defense Against Financial Fraud",
-                    secondText: `NeoSec is your defense against financial scams. We deliver the intelligence and support necessary to reclaim what's rightfully yours. By identifying and exposing fraudsters, we help you take back control and restore your financial security.`,
+                    secondText: `NeoSec is your ultimate shield against financial scams. Armed with our intelligence and unwavering support, you can reclaim what's rightfully yours. We identify and expose the fraudsters, empowering you to regain control and restore your financial security. Trust NeoSec to protect and recover your assets.`,
                   },
                 ]}
               ></Accordion>
             </div>
-            <div className="h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px]">
+            <div className="order-1 h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px] md:order-2">
               <Image
                 src={pic3}
                 alt="cybersecurity"
-                className="object-cover"
+                className="object-cover grayscale"
               ></Image>
             </div>
           </div>
@@ -336,24 +336,24 @@ const PageServices = () => {
           <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-zinc-700 to-transparent px-8 py-16">
             <div className="flex flex-wrap gap-2">
               <span
-                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white ${pop.className}`}
+                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className} antialiased`}
               >
-                Protect Your Digital
+                Fortify Your Digital
               </span>
               <span
-                className={`text-3xl font-semibold tracking-tight text-white/70 ${pop.className}`}
+                className={`text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className} antialiased`}
               >
-                World
+                Realm
               </span>
             </div>
-            <p className="prose prose-base px-8 text-center text-white/70">
-              {`Engage with NeoSec for unparalleled cybersecurity solutions. Secure your digital presence today.`}
+            <p className="prose prose-sm px-8 text-center text-white/70 md:prose-base md:leading-loose">
+              {`Partner with NeoSec for unrivaled cybersecurity solutions and lock down your digital presence today. Experience unparalleled peace of mind with our cutting-edge protection.`}
             </p>
             <a
               href="mailto:info@neosec.tech"
               className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-base"
             >
-              reach our team
+              reach us
             </a>
           </div>
         </div>
