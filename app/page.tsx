@@ -43,7 +43,7 @@ export default function Home() {
           <div className="container relative z-10 mx-auto flex w-full flex-1 flex-col justify-center gap-14 px-4">
             <div className="flex flex-wrap md:flex-col">
               <h1
-                className={`${pop.className} text-2xl font-semibold uppercase tracking-tight antialiased sm:text-3xl md:whitespace-nowrap md:text-5xl lg:text-7xl`}
+                className={`${pop.className} text-2xl font-semibold uppercase tracking-tight antialiased sm:text-3xl md:text-5xl lg:text-7xl`}
               >
                 Fortify Your Future: Smarter. Faster.
               </h1>
