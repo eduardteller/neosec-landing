@@ -288,17 +288,17 @@ const PageServices = () => {
         <div id="section4" className="mx-auto max-w-6xl py-24">
           <div className="flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:items-start md:px-8">
             <div className="order-2 flex-1 md:order-1">
-              <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:flex-col md:justify-start">
-                <span
-                  className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
+              <div className="mb-4 flex w-full flex-wrap justify-center md:flex-col md:justify-start">
+                <h2
+                  className={`text-center text-3xl font-semibold tracking-tight text-white md:text-start ${pop.className} antialiased`}
                 >
-                  Cyber Investigations & Asset
-                </span>
-                <span
-                  className={`text-3xl font-semibold tracking-tight text-white/70 ${pop.className} antialiased`}
-                >
-                  Recovery
-                </span>
+                  Cyber Investigations & Asset{" "}
+                  <span
+                    className={`text-3xl font-semibold tracking-tight text-white/70 md:block ${pop.className} antialiased`}
+                  >
+                    Recovery
+                  </span>
+                </h2>
               </div>
               <Accordion
                 items={[
