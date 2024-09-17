@@ -51,9 +51,9 @@ const PageServices = () => {
           <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-widest text-white duration-300 hover:bg-transparent hover:text-white/60">
             services{" "}
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-2 md:flex-row">
             <span
-              className={`whitespace-nowrap text-4xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
+              className={`text-4xl font-semibold tracking-tight text-white md:whitespace-nowrap md:text-5xl ${pop.className}`}
             >
               Discover Our
             </span>
@@ -334,7 +334,7 @@ const PageServices = () => {
       <section className="bg-black">
         <div className="mx-auto max-w-7xl px-4 py-24">
           <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-zinc-700 to-transparent px-8 py-16">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap items-center justify-center gap-2">
               <span
                 className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className} antialiased`}
               >
