@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // import pic2 from "../public/pexels-saksham-choudhary-109710-2036656.jpg";
 // import pic2 from "../public/pexels-pixabay-60504.jpg";
-import pic2 from "../public/blurface.jpg";
+import pic2 from "../../public/blurface.jpg";
 const pop = Poppins({
   subsets: ["latin"],
   weight: ["700", "100", "200", "300", "400", "500", "600", "800", "900"],
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-6">
             <div>
               <Link
-                href={"/"}
+                href={"/en"}
                 className="text-xl font-bold uppercase tracking-tight text-white/60 duration-300 hover:text-white md:text-3xl"
               >
                 <span>NEO</span>
@@ -35,14 +35,14 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-8">
               <div className="text-lg font-medium text-white/60">
-                <Link
-                  className="tracking-tight duration-300 hover:text-white"
-                  href={"/en"}
-                >
+                <Link className="text-white" href={"/en"}>
                   ENG
                 </Link>
                 <span> | </span>
-                <Link className="text-white" href={"/"}>
+                <Link
+                  className="tracking-tight duration-300 hover:text-white"
+                  href={"/"}
+                >
                   EST
                 </Link>
               </div>
@@ -50,7 +50,7 @@ export default function Home() {
                 href="mailto:info@neosec.tech"
                 className="border border-white/20 bg-black px-6 py-3 text-xs uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-sm"
               >
-                KONTAKT
+                CONTACT US
               </a>
             </div>
           </div>
@@ -59,24 +59,24 @@ export default function Home() {
               <h1
                 className={`${pop.className} text-2xl font-semibold uppercase tracking-tight antialiased sm:text-3xl md:text-5xl lg:text-7xl`}
               >
-                Kindlusta Oma Tulevik: Alusta Täna
+                Fortify Your Future: Smarter. Faster.
               </h1>
               <h1
                 className={`${pop.className} mt-2 text-2xl font-semibold uppercase tracking-tight text-white/70 antialiased sm:text-3xl md:mt-4 md:whitespace-nowrap md:text-5xl lg:text-7xl`}
               >
-                Purunematu küberturvalisus.
+                Unbreakable Cybersecurity.
               </h1>
             </div>
             <p className="prose prose-base max-w-none text-base text-white/70 md:prose-lg md:leading-loose md:tracking-wider">
-              Kaitseme teie digimaailma seal, kus teised ebaõnnestuvad—pakume
-              turvalisust, mis toimib ka kõige keerulisemates tingimustes.{" "}
+              Protecting your digital world where others fail—delivering
+              security that thrives in even the toughest conditions.{" "}
             </p>
             <div className="flex gap-4">
               <Link
-                href="/services"
+                href="/en/services"
                 className="border border-white/20 bg-black px-6 py-3 text-xs uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-sm"
               >
-                teenused
+                services
               </Link>
               {/* <a
             href="mailto:info@neosec.tech"
@@ -91,23 +91,23 @@ export default function Home() {
       <section className="bg-black">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-4 py-24 md:items-center md:px-8">
           <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-widest text-white duration-300 hover:text-white/60">
-            Võimatust reaalsuseks{" "}
+            Turning the Impossible into Reality{" "}
           </div>
-          <div className="flex flex-col items-start justify-center gap-2 md:w-[480px] md:items-center">
+          <div className="flex flex-col items-start justify-center gap-2 md:w-[576px] md:items-center">
             <h1
               className={`text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl ${pop.className}`}
             >
-              Täpsus tegudes
+              Precision in Action
             </h1>
             <h2
-              className={`whitespace-nowrap text-center text-3xl font-semibold tracking-tight text-white/70 sm:text-4xl md:text-5xl ${pop.className}`}
+              className={`text-3xl font-semibold tracking-tight text-white/70 sm:text-4xl md:text-5xl ${pop.className}`}
             >
-              Võimsus globaalses ulatuses
+              Power on a Global Scale
             </h2>
           </div>
           <div className="prose prose-base mt-8 flex max-w-xl flex-col items-start justify-center leading-loose text-white/80 md:mt-12">
             <p>
-              {`NeoSec õnnestub seal, kus teised ebaõnnestuvad. Meie spetsialiseerumisvaldkondadeks on kõrge panusega valgekraede uurimised, digitaalsed ohuluureteenused, digitaalsete jalajälgede eemaldamine ja vara taastamine - saavutame seda, mida enamik peab võimatuks. Tipptasemel tehnoloogia ja eliitspetsialistide abil leiame üles kriitilised tõendid, mida teised lihtsalt ei suuda leida. Meie kohandatud strateegiad ühendavad põhjalikud tööstusalased teadmised, globaalse asjatundlikkuse ja rahvusvahelise võrgustiku, et paljastada varjatud tõed ning pakkuda vajalikke teostatavaid teadmisi, mis aitavad teil edu saavutada.`}
+              {`At NeoSec, we thrive where others falter. Specializing in high-stakes white-collar investigations, digital threat intelligence, digital footprint removal, and asset recovery, we achieve what most deem impossible. Armed with cutting-edge technology and elite operatives, we uncover critical evidence that others simply cannot. Our tailored strategies combine deep industry knowledge, global expertise, and an international network to reveal hidden truths and deliver the actionable insights you need to succeed.`}
             </p>
           </div>
         </div>
@@ -138,22 +138,25 @@ export default function Home() {
             </div>
             <div className="flex w-full flex-col items-center justify-center gap-8 px-8 py-8 md:px-24 lg:items-start lg:py-0">
               <div className="mx-auto w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:text-white/60 lg:mx-0">
-                Kuldstandardi kehtestamine{" "}
+                Setting the Gold Standard{" "}
               </div>
               <div className="flex flex-wrap justify-center gap-2 text-center lg:flex-col lg:text-left">
                 <h1
-                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-4xl lg:text-4xl ${pop.className}`}
+                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-4xl lg:text-5xl ${pop.className}`}
                 >
-                  Tõestatud Asjatundlikkus
+                  Proven Expertise
                 </h1>
                 <h2
-                  className={`text-3xl font-semibold tracking-tight text-white/70 md:text-4xl lg:text-4xl ${pop.className}`}
+                  className={`text-3xl font-semibold tracking-tight text-white/70 md:text-4xl lg:text-5xl ${pop.className}`}
                 >
-                  Milles Võid Kindel Olla
+                  You Can Rely On
                 </h2>
               </div>
               <p className="prose prose-base text-left leading-loose text-white/70">
-                {`NeoSec on küberturbe esirinnas, arendades väsimatult oma meetodeid, et edestada tekkivaid ohte. Meie pühendumus uuendustegevusele tagab, et teie organisatsioon püsib kaitstuna tänapäevaseima tehnoloogiaga.`}
+                {`NeoSec is at the forefront of cybersecurity, relentlessly
+                evolving our methods to outsmart emerging threats. Our
+                dedication to innovation guarantees your organization stays
+                protected with cutting-edge technology. `}
               </p>
             </div>
           </div>
@@ -166,49 +169,55 @@ export default function Home() {
             <div className="flex flex-col gap-8">
               <div className="flex flex-wrap gap-2 text-start">
                 <h1
-                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-4xl ${pop.className}`}
+                  className={`text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
                 >
-                  Mitmekesised Tööstusharud
+                  Diverse Industries
                 </h1>
                 <h2
-                  className={`text-3xl font-semibold tracking-tight text-white/70 md:text-4xl ${pop.className}`}
+                  className={`text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
                 >
-                  Kohandatud Lahendused
+                  Tailored Solutions
                 </h2>
               </div>
               <p className="prose prose-base max-w-none text-white/70">
-                {`NeoSec seisab tipptaseme tipus, pakkudes erakordseid luurelahendusi mitmetes sektorites. Meie asjatundlikkus toob käegakatsutavaid tulemusi igas valdkonnas, alates juriidikast ja rahandusest kuni valitsuse, tervishoiu, energia, tehnoloogia ja jaekaubanduseni. NeoSec on teie usaldusväärne partner teekonnal eduni, tagades teie konkurentsieelise igas valdkonnas. Avastage ületamatu sooritus ja tõstke oma ettevõte uuele tasemele koos NeoSeciga.`}
+                {`NeoSec stands at the pinnacle of excellence, delivering top-tier
+                intelligence solutions across a multitude of sectors. Whether
+                it's legal, financial, corporate, government, healthcare,
+                energy, tech, or retail, our expertise translates into tangible
+                results for every industry we touch. Discover unparalleled
+                performance with NeoSec, your partner in success across all
+                domains`}
               </p>
             </div>
             <div className="flex h-fit flex-col gap-4 bg-gradient-to-br from-zinc-900 to-transparent p-8 lg:min-w-[720px]">
               <h1 className="text-xl font-medium text-white">
-                {`Võimestame`}
-                <span className="ml-1 text-white/70">Iga Tööstusharu</span>
+                {`Empowering Every`}
+                <span className="ml-1 text-white/70">Industry</span>
               </h1>
               <div className="flex flex-wrap gap-4">
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  valitsus
+                  governments
                 </div>
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  telekommunikatsioon
+                  telecommunication
                 </div>
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  tervishoid
+                  healthcare
                 </div>
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  krüpto
+                  crypto
                 </div>
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  rahandus
+                  finance
                 </div>
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
                   fintech
                 </div>
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  energia
+                  energy
                 </div>
                 <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  õigusvaldkond
+                  legal
                 </div>
               </div>
             </div>
@@ -222,22 +231,22 @@ export default function Home() {
               <span
                 className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
               >
-                Avasta Ülim
+                Discover The
               </span>
               <span
                 className={`text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
               >
-                Kaitse
+                Ultimate Protection
               </span>
             </div>
             <p className="prose prose-sm px-8 text-center text-white/70 md:prose-base md:leading-loose">
-              {`Kaitse oma kõige väärtuslikumaid varasid NeoSeci eliitluureteenustega. Võta meiega ühendust juba täna, et tagada ületamatu kaitse!`}
+              {`Safeguard your most valuable assets with NeoSec's elite intelligence services. Reach out to us today for unmatched protection!`}
             </p>
             <a
               href="mailto:info@neosec.tech"
               className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-base"
             >
-              võta meiega ühendust
+              reach us
             </a>
           </div>
         </div>
