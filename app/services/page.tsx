@@ -8,12 +8,11 @@ import {
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import Accordion from "../../components/Accordion";
 import pic4 from "../../public/digital-footprint.webp";
 import pic2 from "../../public/digital-protection-concierge-service.webp";
 import pic3 from "../../public/pexels-alesiakozik-6765371.jpg";
 import pic1 from "../../public/pexels-pixabay-207580.jpg";
-import Accordion from "../Accordion";
-import { bgImageData } from "../page";
 const pop = Poppins({
   subsets: ["latin"],
   weight: ["700", "100", "200", "300", "400", "500", "600", "800", "900"],
@@ -23,12 +22,12 @@ const PageServices = () => {
   return (
     <>
       <section className="relative min-h-screen bg-black text-white">
-        <div
+        {/* <div
           className="breathe absolute inset-0 z-0"
           style={{
             backgroundImage: bgImageData,
           }}
-        ></div>
+        ></div> */}
         <div className="absolute inset-0 z-[1] h-full w-full bg-gradient-to-br from-white/5 to-transparent"></div>
         <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-6">
           <div>

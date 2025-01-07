@@ -1,4 +1,4 @@
-import Accordion from "@/app/Accordion";
+import Accordion from "@/components/Accordion";
 import {
   ArrowUpRight,
   Bitcoin,
