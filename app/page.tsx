@@ -55,10 +55,10 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="container relative z-10 mx-auto flex w-full flex-1 flex-col items-center gap-14 px-4 pt-32">
-            <div className="flex flex-wrap items-center md:flex-col">
+          <div className="container relative z-10 mx-auto flex w-full flex-1 flex-col items-center gap-14 px-4 pt-32 [@media(max-height:768px)]:gap-8 [@media(max-height:768px)]:pt-16">
+            <div className="flex flex-col items-center">
               <h1
-                className={`${pop.className} inline-block bg-gradient-to-r from-white via-sky-400 to-white bg-clip-text text-2xl font-semibold uppercase tracking-tight text-transparent antialiased sm:text-3xl md:text-5xl lg:text-7xl`}
+                className={`${pop.className} inline-block bg-gradient-to-r from-white via-sky-400 to-white bg-clip-text text-xl font-semibold uppercase tracking-tight text-transparent antialiased sm:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl`}
               >
                 Kindlusta Oma Tulevik: Alusta Täna
               </h1>
@@ -68,12 +68,12 @@ export default function Home() {
                 Kindlusta Oma Tulevik: Alusta Täna
               </h1> */}
               <h1
-                className={`${pop.className} mt-2 text-2xl font-semibold uppercase tracking-tight text-white/70 antialiased sm:text-3xl md:mt-4 md:whitespace-nowrap md:text-5xl lg:text-7xl`}
+                className={`${pop.className} mt-2 text-xl font-semibold uppercase tracking-tight text-white/70 antialiased sm:text-3xl md:mt-4 md:whitespace-nowrap lg:text-5xl xl:text-6xl 2xl:text-7xl`}
               >
                 Purunematu küberturvalisus.
               </h1>
             </div>
-            <p className="prose prose-base max-w-none text-base text-white/70 md:prose-lg md:leading-loose md:tracking-wider">
+            <p className="prose prose-base max-w-none text-base leading-loose tracking-wider text-white/70 lg:prose-lg max-lg:mx-32 max-md:mx-16">
               Kaitseme teie digimaailma seal, kus teised ebaõnnestuvad—pakume
               turvalisust, mis toimib ka kõige keerulisemates tingimustes.{" "}
             </p>
