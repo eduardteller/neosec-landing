@@ -8,7 +8,7 @@ interface Props {
 
 const ServiceTypesComponent = ({ title, description, Icon }: Props) => {
   return (
-    <span className="group flex h-32 w-full flex-row items-center gap-4 rounded-md border border-white/20 p-4 duration-300 hover:translate-x-[8px] hover:border-sky-600 hover:bg-gradient-to-br hover:from-zinc-950 hover:via-zinc-950 hover:to-zinc-900">
+    <span className="group flex h-32 w-full flex-row items-center gap-4 rounded-md border border-white/20 p-4 duration-300 hover:translate-x-[8px] hover:border-sky-600">
       <Icon
         size={96}
         className="text-white/50 duration-300 group-hover:text-sky-600"
