@@ -4,6 +4,17 @@ import Link from "next/link";
 // import pic2 from "../public/pexels-saksham-choudhary-109710-2036656.jpg";
 // import pic2 from "../public/pexels-pixabay-60504.jpg";
 import LoopingSlider from "@/components/LoopingSlider";
+import ServiceTypesComponent from "@/components/ServiceTypesComponent";
+import {
+  Ambulance,
+  BatteryFull,
+  Bitcoin,
+  Cpu,
+  HandCoins,
+  Landmark,
+  Phone,
+  Scale,
+} from "lucide-react";
 import pic2 from "../public/blurface.jpg";
 const pop = Poppins({
   subsets: ["latin"],
@@ -102,11 +113,11 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-zinc-950">
-        <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-4 py-24 md:items-center md:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-24 md:items-center md:px-8">
           <div className="text-sm font-bold uppercase tracking-widest text-sky-600">
             Võimatust reaalsuseks{" "}
           </div>
-          <div className="flex flex-col items-start justify-center gap-2 md:w-[480px] md:items-center">
+          <div className="space-y-2 text-center">
             <h1
               className={`text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl ${pop.className}`}
             >
@@ -118,10 +129,13 @@ export default function Home() {
               Võimsus globaalses ulatuses
             </h2>
           </div>
-          <div className="prose prose-lg mt-8 flex max-w-xl flex-col items-start justify-center leading-loose text-white/80 md:mt-12">
+          <div className="prose prose-lg mt-8 flex flex-col justify-center leading-loose text-white/80 md:mt-12">
             <p>
-              {`NeoSec õnnestub seal, kus teised ebaõnnestuvad. Meie spetsialiseerumisvaldkondadeks on kõrge panusega valgekraede uurimised, digitaalsed ohuluureteenused, digitaalsete jalajälgede eemaldamine ja vara taastamine - saavutame seda, mida enamik peab võimatuks. Tipptasemel tehnoloogia ja eliitspetsialistide abil leiame üles kriitilised tõendid, mida teised lihtsalt ei suuda leida. Meie kohandatud strateegiad ühendavad põhjalikud tööstusalased teadmised, globaalse asjatundlikkuse ja rahvusvahelise võrgustiku, et paljastada varjatud tõed ning pakkuda vajalikke teostatavaid teadmisi, mis aitavad teil edu saavutada.`}
+              {`NeoSec on ekspert kõrge panusega uurimistes, digitaalsetes ohuluureteenustes, jalajälgede kustutamises ja vara taastamises. Meie eliitspetsialistid ja tipptasemel tehnoloogia leiavad tõendid, mida teised ei näe. Kohandatud strateegiad, globaalne asjatundlikkus ja ulatuslik võrgustik tagavad teile kriitilised teadmised ja edu. Valige NeoSec – võimatu on meie standard!`}
             </p>
+            {/* <p>
+              {`NeoSec õnnestub seal, kus teised ebaõnnestuvad. Meie spetsialiseerumisvaldkondadeks on kõrge panusega valgekraede uurimised, digitaalsed ohuluureteenused, digitaalsete jalajälgede eemaldamine ja vara taastamine - saavutame seda, mida enamik peab võimatuks. Tipptasemel tehnoloogia ja eliitspetsialistide abil leiame üles kriitilised tõendid, mida teised lihtsalt ei suuda leida. Meie kohandatud strateegiad ühendavad põhjalikud tööstusalased teadmised, globaalse asjatundlikkuse ja rahvusvahelise võrgustiku, et paljastada varjatud tõed ning pakkuda vajalikke teostatavaid teadmisi, mis aitavad teil edu saavutada.`}
+            </p> */}
           </div>
         </div>
       </section>
@@ -175,59 +189,85 @@ export default function Home() {
 
       <section className="bg-zinc-950">
         <div className="mx-auto max-w-7xl py-24">
-          <div className="flex flex-col items-center justify-center gap-12 px-4 md:px-8">
-            <div className="flex flex-col gap-8">
-              <div className="flex flex-col gap-2 text-start">
+          <div className="flex w-full flex-col items-center justify-center gap-12 px-4 md:px-8">
+            <div className="space-y-8">
+              <div className="space-y-2 text-start">
                 <h1
-                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-4xl ${pop.className}`}
+                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white sm:text-4xl ${pop.className}`}
                 >
                   Mitmekesised Tööstusharud
                 </h1>
                 <h2
-                  className={`text-3xl font-semibold tracking-tight text-white/70 md:text-4xl ${pop.className}`}
+                  className={`text-3xl font-semibold tracking-tight text-white/70 sm:text-4xl ${pop.className}`}
                 >
                   Kohandatud Lahendused
                 </h2>
               </div>
-              <p className="prose prose-base max-w-none text-white/70">
-                {`NeoSec seisab tipptaseme tipus, pakkudes erakordseid luurelahendusi mitmetes sektorites. Meie asjatundlikkus toob käegakatsutavaid tulemusi igas valdkonnas, alates juriidikast ja rahandusest kuni valitsuse, tervishoiu, energia, tehnoloogia ja jaekaubanduseni. NeoSec on teie usaldusväärne partner teekonnal eduni, tagades teie konkurentsieelise igas valdkonnas. Avastage ületamatu sooritus ja tõstke oma ettevõte uuele tasemele koos NeoSeciga.`}
+              <p className="prose prose-base text-white/70">
+                {`NeoSec pakub tipptasemel luurelahendusi, mis annavad käegakatsutavaid tulemusi juriidikas, rahanduses, valitsuses, tervishoius, energias, tehnoloogias ja jaekaubanduses. Oleme teie usaldusväärne partner edu saavutamisel ja konkurentsieelise tagamisel. `}
               </p>
-            </div>
-            <div className="flex h-fit flex-col gap-4 bg-gradient-to-br from-zinc-900 to-transparent p-8 lg:min-w-[720px]">
-              <h1 className="text-xl font-medium text-white">
-                {`Võimestame`}
-                <span className="ml-1 text-white/70">Iga Tööstusharu</span>
-              </h1>
-              <div className="flex flex-wrap gap-4">
-                <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  valitsus
-                </div>
-                <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  telekommunikatsioon
-                </div>
-                <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  tervishoid
-                </div>
-                <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  krüpto
-                </div>
-                <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  rahandus
-                </div>
-                <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  fintech
-                </div>
-                <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  energia
-                </div>
-                <div className="border border-white/20 bg-transparent p-4 text-xs uppercase tracking-[0.2em] text-white duration-300 hover:bg-black/20 hover:text-white/60">
-                  õigusvaldkond
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="bg-zinc-950">
+        <div className="mx-auto max-w-5xl py-24">
+          <div className="flex w-full flex-col items-center justify-center gap-12 px-4 md:px-8">
+            <h6 className="text-sm font-bold uppercase tracking-widest text-sky-600">
+              Võimatust reaalsuseks
+            </h6>
+            <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
+              {`Võimestame`}
+              <span className="ml-4 text-white/70">Iga Tööstusharu</span>
+            </h1>
+
+            <div className="flex w-full flex-col gap-4">
+              <ServiceTypesComponent
+                title="Valitsus"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                Icon={Landmark}
+              />
+              <ServiceTypesComponent
+                title="telekommunikatsioon"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                Icon={Phone}
+              />
+              <ServiceTypesComponent
+                title="tervishoid"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                Icon={Ambulance}
+              />
+              <ServiceTypesComponent
+                title="krüpto"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                Icon={Bitcoin}
+              />
+              <ServiceTypesComponent
+                title="rahandus"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                Icon={HandCoins}
+              />
+              <ServiceTypesComponent
+                title="fintech"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                Icon={Cpu}
+              />
+              <ServiceTypesComponent
+                title="energia"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                Icon={BatteryFull}
+              />
+              <ServiceTypesComponent
+                title="õigusvaldkond"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                Icon={Scale}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-zinc-950">
         <section className="bg-gradient-to-br from-sky-950/80 to-zinc-950">
           <div className="mx-auto max-w-7xl px-4 py-24 md:px-8">
