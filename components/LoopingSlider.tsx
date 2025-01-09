@@ -27,25 +27,27 @@ const LoopingSlider = ({ size }: Props) => {
   ];
 
   return (
-    <div className="w-[calc(100vw-17px)] py-8 pt-8">
+    <div className="relative w-[calc(100vw-17px)] py-8">
       <div className="relative h-fit overflow-hidden">
-        <ul className="flex h-full w-[calc(248px*24)] animate-scroll items-center">
-          {icons.map((icon, i) => (
-            <li key={`first-${i}`} className="w-[248px]">
-              {icon}
-            </li>
-          ))}
-          {icons.map((icon, i) => (
-            <li key={`second-${i}`} className="w-[248px]">
-              {icon}
-            </li>
-          ))}
-          {icons.map((icon, i) => (
-            <li key={`third-${i}`} className="w-[248px]">
-              {icon}
-            </li>
-          ))}
-        </ul>
+        <div className="[mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent_100%)]">
+          <ul className="flex h-full w-[calc(248px*24)] animate-scroll items-center">
+            {icons.map((icon, i) => (
+              <li key={`first-${i}`} className="w-[248px]">
+                {icon}
+              </li>
+            ))}
+            {icons.map((icon, i) => (
+              <li key={`second-${i}`} className="w-[248px]">
+                {icon}
+              </li>
+            ))}
+            {icons.map((icon, i) => (
+              <li key={`third-${i}`} className="w-[248px]">
+                {icon}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
