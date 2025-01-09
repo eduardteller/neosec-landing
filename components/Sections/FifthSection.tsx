@@ -4,27 +4,27 @@ const FifthSection = () => {
   return (
     <section className="bg-zinc-950">
       <section className="bg-gradient-to-br from-sky-950/80 to-zinc-950">
-        <div className="mx-auto max-w-7xl px-4 py-24 md:px-8">
-          <div className="flex flex-col items-center justify-center gap-4 px-8 py-16 md:gap-8">
-            <div className="flex flex-wrap justify-center gap-2 md:justify-start md:gap-2">
+        <div className="mx-auto max-w-7xl px-8 py-24">
+          <div className="flex flex-col items-center justify-center gap-4 py-16 md:gap-8">
+            <div className="flex flex-wrap justify-center gap-2 text-3xl sm:text-4xl md:justify-start md:gap-2 md:text-5xl">
               <span
-                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className}`}
+                className={`whitespace-nowrap font-semibold tracking-tight text-zinc-100 ${pop.className}`}
               >
                 Avasta Ülim
               </span>
               <span
-                className={`text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
+                className={`font-semibold tracking-tight text-zinc-400 ${pop.className}`}
               >
                 Kaitse
               </span>
             </div>
-            <p className="prose prose-base px-8 text-center text-white/70 md:prose-lg md:leading-loose">
+            <p className="prose prose-base px-8 text-center text-zinc-400 md:prose-lg md:leading-loose">
               {`Kaitse oma kõige väärtuslikumaid varasid NeoSeci eliitluureteenustega. Võta meiega ühendust juba täna, et tagada ületamatu kaitse!`}
             </p>
 
             <a
               href="mailto:info@neosec.tech"
-              className="rounded-md border border-white/40 bg-sky-600 px-16 py-4 text-sm font-bold uppercase text-white/70 duration-300 hover:bg-white hover:text-black md:text-lg"
+              className="rounded-md bg-sky-600 px-16 py-4 text-sm font-bold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950 md:text-lg"
             >
               KONTAKT
             </a>

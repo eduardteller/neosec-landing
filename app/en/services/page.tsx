@@ -22,7 +22,7 @@ const pop = Poppins({
 const PageServices = () => {
   return (
     <>
-      <section className="relative min-h-screen bg-black text-white">
+      <section className="relative min-h-screen bg-black text-zinc-100">
         <div
           className="breathe absolute inset-0 z-0"
           style={{
@@ -34,20 +34,20 @@ const PageServices = () => {
           <div>
             <Link
               href={"/en"}
-              className="text-xl font-bold uppercase tracking-tight text-white/60 antialiased duration-300 hover:text-white md:text-3xl"
+              className="text-xl font-bold uppercase tracking-tight text-zinc-100/60 antialiased duration-300 hover:text-zinc-100 md:text-3xl"
             >
               <span>NEO</span>
-              <span className="text-white/40">SEC</span>
+              <span className="text-zinc-100/40">SEC</span>
             </Link>
           </div>
           <div className="flex items-center gap-8">
-            <div className="text-lg font-medium text-white/60">
-              <Link className="text-white" href={"/en/services"}>
+            <div className="text-lg font-medium text-zinc-100/60">
+              <Link className="text-zinc-100" href={"/en/services"}>
                 ENG
               </Link>
               <span> | </span>
               <Link
-                className="tracking-tight duration-300 hover:text-white"
+                className="tracking-tight duration-300 hover:text-zinc-100"
                 href={"/services"}
               >
                 EST
@@ -55,34 +55,34 @@ const PageServices = () => {
             </div>
             <a
               href="mailto:info@neosec.tech"
-              className="border border-white/20 bg-black px-6 py-3 text-xs uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-sm"
+              className="border border-white/20 bg-black px-6 py-3 text-xs uppercase tracking-[0.2em] text-zinc-400 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-sm"
             >
               CONTACT US
             </a>
           </div>
         </div>
         <div className="relative z-10 flex w-full flex-col items-center gap-14 px-4 py-8">
-          <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-widest text-white duration-300 hover:bg-transparent hover:text-white/60">
+          <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-widest text-zinc-100 duration-300 hover:bg-transparent hover:text-zinc-100/60">
             services{" "}
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2 md:flex-row">
             <span
-              className={`text-4xl font-semibold tracking-tight text-white md:whitespace-nowrap md:text-5xl ${pop.className}`}
+              className={`text-4xl font-semibold tracking-tight text-zinc-100 md:whitespace-nowrap md:text-5xl ${pop.className}`}
             >
               Discover Our
             </span>
             <span
-              className={`text-4xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
+              className={`text-4xl font-semibold tracking-tight text-zinc-400 md:text-5xl ${pop.className}`}
             >
               Services
             </span>
           </div>
-          <p className="prose prose-base max-w-3xl px-8 text-center leading-loose text-white/70">
+          <p className="prose prose-base max-w-3xl px-8 text-center leading-loose text-zinc-400">
             {`Unlock Complete Cybersecurity Mastery with our all-encompassing solutions. From Digital Footprint Removal and bespoke Digital Protection Concierge Services to advanced Cyber Threat Intelligence, we ensure your organization's digital fortress is impenetrable. `}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 lg:flex-row">
             <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <EarthLock size={36} className="text-white/40" />
+              <EarthLock size={36} className="text-zinc-100/40" />
 
               <p className="text-center text-lg font-medium">
                 Cyber Threat Intelligence
@@ -95,7 +95,7 @@ const PageServices = () => {
               </a>
             </div>
             <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <Shield size={36} className="text-white/40" />
+              <Shield size={36} className="text-zinc-100/40" />
               <p className="text-center text-lg font-medium">
                 Digital Protection Concierge Service
               </p>
@@ -107,7 +107,7 @@ const PageServices = () => {
               </a>
             </div>
             <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <Fingerprint size={36} className="text-white/40" />
+              <Fingerprint size={36} className="text-zinc-100/40" />
 
               <p className="text-center text-lg font-medium">
                 Digital Footprint Removal
@@ -120,7 +120,7 @@ const PageServices = () => {
               </a>
             </div>
             <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <Bitcoin size={36} className="text-white/40" />
+              <Bitcoin size={36} className="text-zinc-100/40" />
 
               <p className="text-center text-lg font-medium">
                 Cyber Investigations & Asset Recovery
@@ -148,12 +148,12 @@ const PageServices = () => {
             <div className="flex-1">
               <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:justify-start">
                 <span
-                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
+                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-zinc-100 ${pop.className} antialiased`}
                 >
                   Cyber Threat
                 </span>
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white/70 ${pop.className} antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-zinc-400 ${pop.className} antialiased`}
                 >
                   Intelligence
                 </span>
@@ -202,12 +202,12 @@ const PageServices = () => {
             <div className="order-2 flex-1 md:order-1">
               <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:justify-start">
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-zinc-100 ${pop.className} antialiased`}
                 >
                   Digital Protection
                 </span>
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white/70 ${pop.className} antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-zinc-400 ${pop.className} antialiased`}
                 >
                   Service
                 </span>
@@ -270,12 +270,12 @@ const PageServices = () => {
             <div className="flex-1">
               <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:justify-start">
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-zinc-100 ${pop.className} antialiased`}
                 >
                   Digital Footprint
                 </span>
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white/70 ${pop.className} antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-zinc-400 ${pop.className} antialiased`}
                 >
                   Removal
                 </span>
@@ -304,11 +304,11 @@ const PageServices = () => {
             <div className="order-2 flex-1 md:order-1">
               <div className="mb-4 flex w-full flex-wrap justify-center md:flex-col md:justify-start">
                 <h2
-                  className={`text-center text-3xl font-semibold tracking-tight text-white md:text-start ${pop.className} antialiased`}
+                  className={`text-center text-3xl font-semibold tracking-tight text-zinc-100 md:text-start ${pop.className} antialiased`}
                 >
                   Cyber Investigations & Asset{" "}
                   <span
-                    className={`text-3xl font-semibold tracking-tight text-white/70 md:block ${pop.className} antialiased`}
+                    className={`text-3xl font-semibold tracking-tight text-zinc-400 md:block ${pop.className} antialiased`}
                   >
                     Recovery
                   </span>
@@ -350,22 +350,22 @@ const PageServices = () => {
           <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-zinc-700 to-transparent px-8 py-16">
             <div className="flex flex-wrap items-center justify-center gap-2">
               <span
-                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className} antialiased`}
+                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-zinc-100 md:text-5xl ${pop.className} antialiased`}
               >
                 Fortify Your Digital
               </span>
               <span
-                className={`text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className} antialiased`}
+                className={`text-3xl font-semibold tracking-tight text-zinc-400 md:text-5xl ${pop.className} antialiased`}
               >
                 Realm
               </span>
             </div>
-            <p className="prose prose-sm px-8 text-center text-white/70 md:prose-base md:leading-loose">
+            <p className="prose prose-sm px-8 text-center text-zinc-400 md:prose-base md:leading-loose">
               {`Partner with NeoSec for unrivaled cybersecurity solutions and lock down your digital presence today. Experience unparalleled peace of mind with our cutting-edge protection.`}
             </p>
             <a
               href="mailto:info@neosec.tech"
-              className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-base"
+              className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-zinc-400 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-base"
             >
               reach us
             </a>
@@ -373,7 +373,7 @@ const PageServices = () => {
         </div>
       </section>
 
-      <footer className="flex items-center justify-center bg-black p-8 text-white">
+      <footer className="flex items-center justify-center bg-black p-8 text-zinc-100">
         <p className="uppercase tracking-widest">Copyright © 2024 NeoSec </p>
       </footer>
     </>

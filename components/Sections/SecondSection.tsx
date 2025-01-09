@@ -14,23 +14,21 @@ const SecondSection = () => {
               alt="neosec"
             />
           </div>
-          <div className="flex w-full flex-col items-center justify-center gap-8 px-8 py-8 md:px-24 lg:items-start lg:py-0">
-            <div className="mx-auto text-sm font-bold uppercase tracking-widest text-sky-600 lg:mx-0">
+          <div className="flex w-full flex-col justify-center gap-8 px-4 py-8 sm:px-8 md:items-center md:px-24 lg:items-start lg:py-0">
+            <div className="mx-auto text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm lg:mx-0">
               Kuldstandardi kehtestamine{" "}
             </div>
-            <div className="flex flex-wrap justify-center gap-2 text-center lg:flex-col lg:text-left">
+            <div className="flex flex-col justify-center gap-2 text-xl font-semibold tracking-tight sm:text-center sm:text-4xl lg:flex-col lg:text-start">
               <h1
-                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-4xl lg:text-4xl ${pop.className}`}
+                className={`whitespace-nowrap text-zinc-100 ${pop.className}`}
               >
                 Tõestatud Asjatundlikkus
               </h1>
-              <h2
-                className={`text-3xl font-semibold tracking-tight text-white/70 md:text-4xl lg:text-4xl ${pop.className}`}
-              >
+              <h2 className={`text-zinc-400 ${pop.className}`}>
                 Milles Võid Kindel Olla
               </h2>
             </div>
-            <p className="prose prose-lg text-left leading-loose text-white/70">
+            <p className="prose prose-base text-left leading-loose text-zinc-400 sm:prose-lg">
               {`NeoSec on küberturbe esirinnas, arendades väsimatult oma meetodeid, et edestada tekkivaid ohte. Meie pühendumus uuendustegevusele tagab, et teie organisatsioon püsib kaitstuna tänapäevaseima tehnoloogiaga.`}
             </p>
           </div>

@@ -34,7 +34,7 @@ const Accordion = ({ items }: Props) => {
       {items.map((item, index) => (
         <div
           key={index + item.firstText.length + item.secondText.length}
-          className={`w-full ${activeIndex[index] ? "text-white" : "text-white/70"} `}
+          className={`w-full ${activeIndex[index] ? "text-zinc-100" : "text-zinc-400"} `}
         >
           <button
             onClick={() => toggleAccordion(index)}
@@ -60,7 +60,7 @@ const Accordion = ({ items }: Props) => {
             }}
             className="transition-max-height prose prose-base max-w-none overflow-hidden leading-loose duration-300 ease-in-out"
           >
-            <div className="px-8 text-white/70">{item.secondText}</div>
+            <div className="px-8 text-zinc-400">{item.secondText}</div>
           </div>
         </div>
       ))}

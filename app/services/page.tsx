@@ -21,7 +21,7 @@ const pop = Poppins({
 const PageServices = () => {
   return (
     <>
-      <section className="relative min-h-screen bg-black text-white">
+      <section className="relative min-h-screen bg-black text-zinc-100">
         {/* <div
           className="breathe absolute inset-0 z-0"
           style={{
@@ -33,55 +33,55 @@ const PageServices = () => {
           <div>
             <Link
               href={"/"}
-              className="text-xl font-bold uppercase tracking-tight text-white/60 antialiased duration-300 hover:text-white md:text-3xl"
+              className="text-xl font-bold uppercase tracking-tight text-zinc-100/60 antialiased duration-300 hover:text-zinc-100 md:text-3xl"
             >
               <span>NEO</span>
-              <span className="text-white/40">SEC</span>
+              <span className="text-zinc-100/40">SEC</span>
             </Link>
           </div>
           <div className="flex items-center gap-8">
-            <div className="text-lg font-medium text-white/60">
+            <div className="text-lg font-medium text-zinc-100/60">
               <Link
-                className="tracking-tight duration-300 hover:text-white"
+                className="tracking-tight duration-300 hover:text-zinc-100"
                 href={"/en/services"}
               >
                 ENG
               </Link>
               <span> | </span>
-              <Link className="text-white" href={"/services"}>
+              <Link className="text-zinc-100" href={"/services"}>
                 EST
               </Link>
             </div>
             <a
               href="mailto:info@neosec.tech"
-              className="border border-white/20 bg-black px-6 py-3 text-xs uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-sm"
+              className="border border-white/20 bg-black px-6 py-3 text-xs uppercase tracking-[0.2em] text-zinc-400 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-sm"
             >
               KONTAKT
             </a>
           </div>
         </div>
         <div className="relative z-10 flex w-full flex-col items-center gap-14 px-4 py-8">
-          <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-widest text-white duration-300 hover:bg-transparent hover:text-white/60">
+          <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-widest text-zinc-100 duration-300 hover:bg-transparent hover:text-zinc-100/60">
             teenused{" "}
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2 md:flex-row">
             <span
-              className={`text-4xl font-semibold tracking-tight text-white md:whitespace-nowrap md:text-5xl ${pop.className}`}
+              className={`text-4xl font-semibold tracking-tight text-zinc-100 md:whitespace-nowrap md:text-5xl ${pop.className}`}
             >
               Avasta Meie
             </span>
             <span
-              className={`text-4xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className}`}
+              className={`text-4xl font-semibold tracking-tight text-zinc-400 md:text-5xl ${pop.className}`}
             >
               Teenused
             </span>
           </div>
-          <p className="prose prose-base max-w-3xl px-8 text-center leading-loose text-white/70">
+          <p className="prose prose-base max-w-3xl px-8 text-center leading-loose text-zinc-400">
             {`Saavuta Täielik Küberturbe Meisterlikkus meie kõikehõlmavate lahendustega. Alates digitaalse jalajälje eemaldamisest ja eritellimusel valmistatud digitaalse kaitse teenustest kuni arenenud küberohtude luureandmeteni - me tagame, et teie organisatsiooni digitaalne kindlus on läbimatu.`}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 lg:flex-row">
             <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <EarthLock size={36} className="text-white/40" />
+              <EarthLock size={36} className="text-zinc-100/40" />
 
               <p className="text-center text-lg font-medium">
                 Küberohtude <br /> Luure
@@ -94,7 +94,7 @@ const PageServices = () => {
               </a>
             </div>
             <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <Shield size={36} className="text-white/40" />
+              <Shield size={36} className="text-zinc-100/40" />
               <p className="text-center text-lg font-medium">
                 Digitaalse Kaitse Concierge-teenus
               </p>
@@ -106,7 +106,7 @@ const PageServices = () => {
               </a>
             </div>
             <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <Fingerprint size={36} className="text-white/40" />
+              <Fingerprint size={36} className="text-zinc-100/40" />
 
               <p className="text-center text-lg font-medium">
                 Digitaalse Jalajälje Eemaldamine
@@ -119,7 +119,7 @@ const PageServices = () => {
               </a>
             </div>
             <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <Bitcoin size={36} className="text-white/40" />
+              <Bitcoin size={36} className="text-zinc-100/40" />
 
               <p className="text-center text-lg font-medium">
                 Küberuurimised ja Vara Tagasisaamine
@@ -147,12 +147,12 @@ const PageServices = () => {
             <div className="flex-1">
               <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:justify-start">
                 <span
-                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
+                  className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-zinc-100 ${pop.className} antialiased`}
                 >
                   Küberohtude
                 </span>
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white/70 ${pop.className} antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-zinc-400 ${pop.className} antialiased`}
                 >
                   Luure
                 </span>
@@ -202,12 +202,12 @@ const PageServices = () => {
             <div className="order-2 flex-1 md:order-1">
               <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:justify-start">
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-zinc-100 ${pop.className} antialiased`}
                 >
                   Digitaalse Kaitse
                 </span>
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white/70 ${pop.className} antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-zinc-400 ${pop.className} antialiased`}
                 >
                   Concierge-teenus
                 </span>
@@ -270,12 +270,12 @@ const PageServices = () => {
             <div className="flex-1">
               <div className="mb-4 flex w-full flex-wrap justify-center gap-2 md:justify-start">
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white ${pop.className} antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-zinc-100 ${pop.className} antialiased`}
                 >
                   Digitaalse Jalajälje
                 </span>
                 <span
-                  className={`text-3xl font-semibold tracking-tight text-white/70 ${pop.className} antialiased`}
+                  className={`text-3xl font-semibold tracking-tight text-zinc-400 ${pop.className} antialiased`}
                 >
                   Eemaldamine
                 </span>
@@ -304,11 +304,11 @@ const PageServices = () => {
             <div className="order-2 flex-1 md:order-1">
               <div className="mb-4 flex w-full flex-wrap justify-center md:flex-col md:justify-start">
                 <h2
-                  className={`text-center text-3xl font-semibold tracking-tight text-white md:text-start ${pop.className} antialiased`}
+                  className={`text-center text-3xl font-semibold tracking-tight text-zinc-100 md:text-start ${pop.className} antialiased`}
                 >
                   Küberuurimised ja Vara{" "}
                   <span
-                    className={`text-3xl font-semibold tracking-tight text-white/70 md:block ${pop.className} antialiased`}
+                    className={`text-3xl font-semibold tracking-tight text-zinc-400 md:block ${pop.className} antialiased`}
                   >
                     Tagasisaamine
                   </span>
@@ -350,22 +350,22 @@ const PageServices = () => {
           <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-zinc-700 to-transparent px-8 py-16">
             <div className="flex flex-wrap items-center justify-center gap-2">
               <span
-                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-white md:text-5xl ${pop.className} antialiased`}
+                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-zinc-100 md:text-5xl ${pop.className} antialiased`}
               >
                 Kindlusta Oma Digitaalne
               </span>
               <span
-                className={`text-3xl font-semibold tracking-tight text-white/70 md:text-5xl ${pop.className} antialiased`}
+                className={`text-3xl font-semibold tracking-tight text-zinc-400 md:text-5xl ${pop.className} antialiased`}
               >
                 Kuningriik
               </span>
             </div>
-            <p className="prose prose-sm px-8 text-center text-white/70 md:prose-base md:leading-loose">
+            <p className="prose prose-sm px-8 text-center text-zinc-400 md:prose-base md:leading-loose">
               {`Tehke koostööd NeoSeciga, et saada ületamatuid küberturvalisuse lahendusi ja kindlustage oma digitaalne kohalolek juba täna. Kogege meie tipptasemel kaitsega võrdlematut meelerahu.`}
             </p>
             <a
               href="mailto:info@neosec.tech"
-              className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-white/70 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-base"
+              className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-zinc-400 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-base"
             >
               Võta Meiega Ühendust
             </a>
@@ -373,7 +373,7 @@ const PageServices = () => {
         </div>
       </section>
 
-      <footer className="flex items-center justify-center bg-black p-8 text-white">
+      <footer className="flex items-center justify-center bg-black p-8 text-zinc-100">
         <p className="uppercase tracking-widest">Copyright © 2024 NeoSec </p>
       </footer>
     </>
