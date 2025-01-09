@@ -1,3 +1,4 @@
+import { servicesSVG2 } from "@/helpers/constants";
 import {
   ArrowUpRight,
   Bitcoin,
@@ -21,47 +22,46 @@ const pop = Poppins({
 const PageServices = () => {
   return (
     <>
-      <section className="relative min-h-screen bg-black text-zinc-100">
-        {/* <div
-          className="breathe absolute inset-0 z-0"
+      <section className="relative min-h-screen bg-zinc-950 text-zinc-100">
+        <div
+          className="breathe absolute inset-0 z-0 bg-contain"
           style={{
-            backgroundImage: bgImageData,
+            backgroundImage: servicesSVG2,
           }}
-        ></div> */}
-        <div className="absolute inset-0 z-[1] h-full w-full bg-gradient-to-br from-white/5 to-transparent"></div>
+        />
         <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-6">
           <div>
             <Link
               href={"/"}
-              className="text-xl font-bold uppercase tracking-tight text-zinc-100/60 antialiased duration-300 hover:text-zinc-100 md:text-3xl"
+              className="text-xl font-bold uppercase tracking-tight text-zinc-400 duration-300 hover:text-zinc-100 md:text-3xl"
             >
               <span>NEO</span>
-              <span className="text-zinc-100/40">SEC</span>
+              <span className="text-zinc-500">SEC</span>
             </Link>
           </div>
           <div className="flex items-center gap-8">
-            <div className="text-lg font-medium text-zinc-100/60">
+            <div className="text-lg font-medium text-zinc-400 max-sm:hidden">
               <Link
                 className="tracking-tight duration-300 hover:text-zinc-100"
-                href={"/en/services"}
+                href={"/"}
               >
                 ENG
               </Link>
               <span> | </span>
-              <Link className="text-zinc-100" href={"/services"}>
+              <Link className="text-zinc-100" href={"/"}>
                 EST
               </Link>
             </div>
             <a
               href="mailto:info@neosec.tech"
-              className="border border-white/20 bg-black px-6 py-3 text-xs uppercase tracking-[0.2em] text-zinc-400 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-sm"
+              className="rounded-md border border-zinc-300 bg-transparent px-8 py-4 text-xs font-bold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950 md:text-sm"
             >
               KONTAKT
             </a>
           </div>
         </div>
         <div className="relative z-10 flex w-full flex-col items-center gap-14 px-4 py-8">
-          <div className="w-fit border border-white/20 bg-black p-2 text-xs uppercase tracking-widest text-zinc-100 duration-300 hover:bg-transparent hover:text-zinc-100/60">
+          <div className="text-center text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm">
             teenused{" "}
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2 md:flex-row">
@@ -76,12 +76,15 @@ const PageServices = () => {
               Teenused
             </span>
           </div>
-          <p className="prose prose-base max-w-3xl px-8 text-center leading-loose text-zinc-400">
+          <p className="prose prose-lg max-w-3xl px-8 text-center leading-loose text-zinc-400 max-md:prose-base">
             {`Saavuta Täielik Küberturbe Meisterlikkus meie kõikehõlmavate lahendustega. Alates digitaalse jalajälje eemaldamisest ja eritellimusel valmistatud digitaalse kaitse teenustest kuni arenenud küberohtude luureandmeteni - me tagame, et teie organisatsiooni digitaalne kindlus on läbimatu.`}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 lg:flex-row">
-            <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <EarthLock size={36} className="text-zinc-100/40" />
+            <div className="group flex h-64 w-60 flex-col items-center gap-4 rounded-md border-2 border-zinc-700 bg-gradient-to-b from-zinc-950 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-sky-600 hover:shadow-2xl">
+              <EarthLock
+                size={36}
+                className="text-zinc-500 duration-300 group-hover:text-sky-600"
+              />
 
               <p className="text-center text-lg font-medium">
                 Küberohtude <br /> Luure
@@ -93,8 +96,11 @@ const PageServices = () => {
                 Loe Lähemalt <ArrowUpRight />
               </a>
             </div>
-            <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <Shield size={36} className="text-zinc-100/40" />
+            <div className="group flex h-64 w-60 flex-col items-center gap-4 rounded-md border-2 border-zinc-700 bg-gradient-to-b from-zinc-950 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-sky-600 hover:shadow-2xl">
+              <Shield
+                size={36}
+                className="text-zinc-500 duration-300 group-hover:text-sky-600"
+              />
               <p className="text-center text-lg font-medium">
                 Digitaalse Kaitse Concierge-teenus
               </p>
@@ -105,8 +111,11 @@ const PageServices = () => {
                 Loe Lähemalt <ArrowUpRight />
               </a>
             </div>
-            <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <Fingerprint size={36} className="text-zinc-100/40" />
+            <div className="group flex h-64 w-60 flex-col items-center gap-4 rounded-md border-2 border-zinc-700 bg-gradient-to-b from-zinc-950 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-sky-600 hover:shadow-2xl">
+              <Fingerprint
+                size={36}
+                className="text-zinc-500 duration-300 group-hover:text-sky-600"
+              />
 
               <p className="text-center text-lg font-medium">
                 Digitaalse Jalajälje Eemaldamine
@@ -118,8 +127,11 @@ const PageServices = () => {
                 Loe Lähemalt <ArrowUpRight />
               </a>
             </div>
-            <div className="flex h-64 w-60 flex-col items-center gap-4 border-2 border-zinc-700 bg-gradient-to-b from-white/20 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-white hover:shadow-2xl">
-              <Bitcoin size={36} className="text-zinc-100/40" />
+            <div className="group flex h-64 w-60 flex-col items-center gap-4 rounded-md border-2 border-zinc-700 bg-gradient-to-b from-zinc-950 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-sky-600 hover:shadow-2xl">
+              <Bitcoin
+                size={36}
+                className="text-zinc-500 duration-300 group-hover:text-sky-600"
+              />
 
               <p className="text-center text-lg font-medium">
                 Küberuurimised ja Vara Tagasisaamine
@@ -134,14 +146,14 @@ const PageServices = () => {
           </div>
         </div>
       </section>
-      <section className="bg-black">
+      <section className="bg-zinc-950">
         <div id="section1" className="mx-auto max-w-6xl py-24">
           <div className="flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:items-start md:px-8">
-            <div className="h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px]">
+            <div className="h-fit w-full rounded-md border border-zinc-200 p-8 sm:h-[456px] sm:w-[456px]">
               <Image
                 src={pic1}
                 alt="cybersecurity"
-                className="object-cover grayscale"
+                className="rounded-md object-cover grayscale"
               ></Image>
             </div>
             <div className="flex-1">
@@ -249,22 +261,22 @@ const PageServices = () => {
                 ]}
               ></Accordion>
             </div>
-            <div className="order-1 h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px] md:order-2">
+            <div className="order-1 h-fit w-full rounded-md border border-zinc-200 p-8 sm:h-[456px] sm:w-[456px] md:order-2">
               <Image
                 src={pic2}
                 alt="cybersecurity"
-                className="object-cover grayscale"
+                className="rounded-md object-cover grayscale"
               ></Image>
             </div>
           </div>
         </div>
         <div id="section3" className="mx-auto max-w-6xl py-24">
           <div className="flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:items-start md:px-8">
-            <div className="h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px]">
+            <div className="h-fit w-full rounded-md border border-zinc-200 p-8 sm:h-[456px] sm:w-[456px]">
               <Image
                 src={pic4}
                 alt="cybersecurity"
-                className="object-cover grayscale"
+                className="rounded-md object-cover grayscale"
               ></Image>
             </div>
             <div className="flex-1">
@@ -335,45 +347,49 @@ const PageServices = () => {
                 ]}
               ></Accordion>
             </div>
-            <div className="order-1 h-fit w-full border border-white/80 p-8 sm:h-[456px] sm:w-[456px] md:order-2">
+            <div className="order-1 h-fit w-full rounded-md border border-zinc-200 p-8 sm:h-[456px] sm:w-[456px] md:order-2">
               <Image
                 src={pic3}
                 alt="cybersecurity"
-                className="object-cover grayscale"
+                className="rounded-md object-cover grayscale"
               ></Image>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-black">
-        <div className="mx-auto max-w-7xl px-4 py-24">
-          <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-zinc-700 to-transparent px-8 py-16">
-            <div className="flex flex-wrap items-center justify-center gap-2">
-              <span
-                className={`whitespace-nowrap text-3xl font-semibold tracking-tight text-zinc-100 md:text-5xl ${pop.className} antialiased`}
+
+      <section className="bg-zinc-950">
+        <section className="bg-gradient-to-br from-sky-950/80 to-zinc-950">
+          <div className="mx-auto max-w-7xl px-8 py-24">
+            <div className="flex flex-col items-center justify-center gap-4 py-16 md:gap-8">
+              <div className="flex flex-wrap justify-center gap-2 text-3xl sm:text-4xl md:justify-start md:gap-2 md:text-5xl">
+                <span
+                  className={`whitespace-nowrap font-semibold tracking-tight text-zinc-100 ${pop.className}`}
+                >
+                  Kindlusta Oma Digitaalne
+                </span>
+                <span
+                  className={`font-semibold tracking-tight text-zinc-400 ${pop.className}`}
+                >
+                  Kuningriik
+                </span>
+              </div>
+              <p className="prose prose-base px-8 text-center text-zinc-400 md:prose-lg md:leading-loose">
+                {`Tehke koostööd NeoSeciga, et saada ületamatuid küberturvalisuse lahendusi ja kindlustage oma digitaalne kohalolek juba täna. Kogege meie tipptasemel kaitsega võrdlematut meelerahu.`}
+              </p>
+
+              <a
+                href="mailto:info@neosec.tech"
+                className="rounded-md bg-sky-600 px-16 py-4 text-sm font-bold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950 md:text-lg"
               >
-                Kindlusta Oma Digitaalne
-              </span>
-              <span
-                className={`text-3xl font-semibold tracking-tight text-zinc-400 md:text-5xl ${pop.className} antialiased`}
-              >
-                Kuningriik
-              </span>
+                Võta Meiega Ühendust
+              </a>
             </div>
-            <p className="prose prose-sm px-8 text-center text-zinc-400 md:prose-base md:leading-loose">
-              {`Tehke koostööd NeoSeciga, et saada ületamatuid küberturvalisuse lahendusi ja kindlustage oma digitaalne kohalolek juba täna. Kogege meie tipptasemel kaitsega võrdlematut meelerahu.`}
-            </p>
-            <a
-              href="mailto:info@neosec.tech"
-              className="border border-white/20 bg-black px-6 py-3 text-sm uppercase tracking-[0.2em] text-zinc-400 duration-300 hover:bg-white hover:text-black md:px-12 md:py-6 md:text-base"
-            >
-              Võta Meiega Ühendust
-            </a>
           </div>
-        </div>
+        </section>
       </section>
 
-      <footer className="flex items-center justify-center bg-black p-8 text-zinc-100">
+      <footer className="flex items-center justify-center bg-zinc-950 p-8 text-zinc-100">
         <p className="uppercase tracking-widest">Copyright © 2024 NeoSec </p>
       </footer>
     </>

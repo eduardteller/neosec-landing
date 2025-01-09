@@ -34,7 +34,7 @@ const Accordion = ({ items }: Props) => {
       {items.map((item, index) => (
         <div
           key={index + item.firstText.length + item.secondText.length}
-          className={`w-full ${activeIndex[index] ? "text-zinc-100" : "text-zinc-400"} `}
+          className={`w-full ${activeIndex[index] ? "text-sky-600" : "text-zinc-400"} `}
         >
           <button
             onClick={() => toggleAccordion(index)}

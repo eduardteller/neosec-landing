@@ -27,7 +27,7 @@ const Heading = () => {
             <div className="text-lg font-medium text-zinc-400 max-sm:hidden">
               <Link
                 className="tracking-tight duration-300 hover:text-zinc-100"
-                href={"/en"}
+                href={"/"}
               >
                 ENG
               </Link>
