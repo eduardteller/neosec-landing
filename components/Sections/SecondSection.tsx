@@ -7,14 +7,24 @@ const SecondSection = () => {
     <section className="bg-zinc-950">
       <div className="mx-auto max-w-7xl px-4 py-24 md:px-8 lg:px-8">
         <div className="flex w-full flex-col justify-center rounded-md lg:flex-row">
-          <div className="flex w-full p-4">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="600"
+            className="flex w-full p-4"
+          >
             <Image
               src={pic2}
               className="rounded-md border border-zinc-800 object-cover grayscale"
               alt="neosec"
             />
           </div>
-          <div className="flex w-full flex-col justify-center gap-8 px-4 py-8 sm:px-8 md:items-center md:px-24 lg:items-start lg:py-0">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+            className="flex w-full flex-col justify-center gap-8 px-4 py-8 sm:px-8 md:items-center md:px-24 lg:items-start lg:py-0"
+          >
             <div className="mx-auto text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm lg:mx-0">
               Kuldstandardi kehtestamine{" "}
             </div>

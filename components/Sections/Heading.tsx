@@ -1,6 +1,7 @@
 import { pop, svgBackground } from "@/helpers/constants";
 import Link from "next/link";
 import LoopingSlider from "../LoopingSlider";
+import ClientHeading from "../ServicesSections/ClientHeading";
 
 const Heading = () => {
   return (
@@ -45,8 +46,13 @@ const Heading = () => {
           </div>
         </div>
         <div className="container relative z-10 mx-auto flex w-full flex-1 flex-col items-center gap-14 px-4 pt-32 [@media(max-height:768px)]:gap-8 [@media(max-height:768px)]:pt-16">
-          <div className="flex flex-col items-center text-center">
-            <h1
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="flex flex-col items-center text-center"
+          >
+            <ClientHeading />
+            {/* <h1
               className={`${pop.className} inline-block bg-gradient-to-r from-zinc-100 via-sky-400 to-zinc-100 bg-clip-text text-2xl font-semibold uppercase tracking-tight text-transparent antialiased sm:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl`}
             >
               <span className="block sm:hidden">
@@ -55,7 +61,7 @@ const Heading = () => {
               <span className="hidden sm:block">
                 Kindlusta Oma Tulevik: Alusta Täna
               </span>
-            </h1>
+            </h1> */}
 
             <h1
               className={`${pop.className} mt-2 text-xl font-semibold uppercase tracking-tight text-zinc-400 antialiased sm:text-3xl md:mt-4 md:whitespace-nowrap lg:text-5xl xl:text-6xl 2xl:text-7xl`}
@@ -63,11 +69,15 @@ const Heading = () => {
               Purunematu küberturvalisus.
             </h1>
           </div>
-          <p className="prose prose-base max-w-none text-center text-base leading-loose tracking-wider text-zinc-400 lg:prose-lg">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="400"
+            className="prose prose-base max-w-none text-center text-base leading-loose tracking-wider text-zinc-400 lg:prose-lg"
+          >
             Kaitseme teie digimaailma seal, kus teised ebaõnnestuvad—pakume
             turvalisust, mis toimib ka kõige keerulisemates tingimustes.{" "}
           </p>
-          <div className="flex gap-4">
+          <div data-aos="fade-up" data-aos-delay="600" className="flex gap-4">
             <Link
               href="/services"
               className="rounded-md bg-sky-600 px-16 py-4 text-xs font-semibold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-black md:text-sm"

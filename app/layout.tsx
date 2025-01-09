@@ -1,3 +1,4 @@
+import { AOSInit } from "@/components/AOSInit";
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <AOSInit />
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );

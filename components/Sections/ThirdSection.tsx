@@ -17,7 +17,12 @@ const ThirdSection = () => {
     <section className="bg-zinc-950">
       <div className="mx-auto max-w-7xl py-24">
         <div className="flex w-full flex-row items-center gap-4 px-8 max-lg:flex-col max-lg:gap-16 lg:justify-evenly">
-          <div className="max-w-lg space-y-8">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+            className="max-w-lg space-y-8"
+          >
             <div className="text-xs font-bold uppercase tracking-widest text-sky-600 max-lg:text-center sm:text-sm">
               teenused{" "}
             </div>
@@ -38,7 +43,12 @@ const ThirdSection = () => {
             </p>
           </div>
 
-          <div className="flex flex-row gap-4 text-zinc-100 max-md:gap-6 max-sm:flex-col">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="600"
+            className="flex flex-row gap-4 text-zinc-100 max-md:gap-6 max-sm:flex-col"
+          >
             <div className="flex flex-col gap-4">
               <div className={baseCSS}>
                 <EarthLock size={36} className={iconCSS} />

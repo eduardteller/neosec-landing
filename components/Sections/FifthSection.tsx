@@ -5,7 +5,12 @@ const FifthSection = () => {
     <section className="bg-zinc-950">
       <section className="bg-gradient-to-br from-sky-950/80 to-zinc-950">
         <div className="mx-auto max-w-7xl px-8 py-24">
-          <div className="flex flex-col items-center justify-center gap-4 py-16 md:gap-8">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="600"
+            className="flex flex-col items-center justify-center gap-4 py-16 md:gap-8"
+          >
             <div className="flex flex-wrap justify-center gap-2 text-3xl sm:text-4xl md:justify-start md:gap-2 md:text-5xl">
               <span
                 className={`whitespace-nowrap font-semibold tracking-tight text-zinc-100 ${pop.className}`}
