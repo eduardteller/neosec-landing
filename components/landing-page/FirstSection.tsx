@@ -2,7 +2,8 @@ import { pop } from "@/helpers/constants";
 
 const FirstSection = () => {
   return (
-    <section className="bg-zinc-950">
+    <section className="relative bg-zinc-950">
+      <div className="absolute right-0 top-0 h-2 w-full bg-zinc-950" />
       <div
         data-aos="zoom-in"
         data-aos-delay="200"

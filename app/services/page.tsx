@@ -1,3 +1,5 @@
+import Footer from "@/components/shared/Footer";
+import Navbar from "@/components/shared/Navbar";
 import { servicesSVG2 } from "@/helpers/constants";
 import {
   ArrowUpRight,
@@ -8,7 +10,6 @@ import {
 } from "lucide-react";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 import Accordion from "../../components/Accordion";
 import pic4 from "../../public/digital-footprint.webp";
 import pic2 from "../../public/digital-protection-concierge-service.webp";
@@ -24,42 +25,12 @@ const PageServices = () => {
     <>
       <section className="relative min-h-screen bg-zinc-950 text-zinc-100">
         <div
-          className="breathe absolute inset-0 z-0 bg-contain"
+          className="breathe absolute inset-0 z-0 bg-contain blur-sm"
           style={{
             backgroundImage: servicesSVG2,
           }}
         />
-        <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-6">
-          <div>
-            <Link
-              href={"/"}
-              className="text-xl font-bold uppercase tracking-tight text-zinc-400 duration-300 hover:text-zinc-100 md:text-3xl"
-            >
-              <span>NEO</span>
-              <span className="text-zinc-500">SEC</span>
-            </Link>
-          </div>
-          <div className="flex items-center gap-8">
-            <div className="text-lg font-medium text-zinc-400 max-sm:hidden">
-              <Link
-                className="tracking-tight duration-300 hover:text-zinc-100"
-                href={"/"}
-              >
-                ENG
-              </Link>
-              <span> | </span>
-              <Link className="text-zinc-100" href={"/"}>
-                EST
-              </Link>
-            </div>
-            <a
-              href="mailto:info@neosec.tech"
-              className="rounded-md border border-zinc-300 bg-transparent px-8 py-4 text-xs font-bold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950 md:text-sm"
-            >
-              KONTAKT
-            </a>
-          </div>
-        </div>
+        <Navbar />
         <div className="relative z-10 flex w-full flex-col items-center gap-14 px-4 py-8">
           <div className="text-center text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm">
             teenused{" "}
@@ -146,7 +117,8 @@ const PageServices = () => {
           </div>
         </div>
       </section>
-      <section className="bg-zinc-950">
+      <section className="relative bg-zinc-950">
+        <div className="absolute right-0 top-0 h-2 w-full bg-zinc-950" />
         <div id="section1" className="mx-auto max-w-6xl py-24">
           <div className="flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:items-start md:px-8">
             <div className="h-fit w-full rounded-md border border-zinc-200 p-8 sm:h-[456px] sm:w-[456px]">
@@ -389,9 +361,7 @@ const PageServices = () => {
         </section>
       </section>
 
-      <footer className="flex items-center justify-center bg-zinc-950 p-8 text-zinc-100">
-        <p className="uppercase tracking-widest">Copyright © 2024 NeoSec </p>
-      </footer>
+      <Footer />
     </>
   );
 };

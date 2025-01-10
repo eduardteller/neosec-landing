@@ -1,10 +1,10 @@
 import CustomDivider from "@/components/CustomDivider";
-import FifthSection from "@/components/Sections/FifthSection";
-import FirstSection from "@/components/Sections/FirstSection";
-import FourthSection from "@/components/Sections/FourthSection";
-import Heading from "@/components/Sections/Heading";
-import SecondSection from "@/components/Sections/SecondSection";
-import ThirdSection from "@/components/Sections/ThirdSection";
+import FifthSection from "@/components/landing-page/FifthSection";
+import FirstSection from "@/components/landing-page/FirstSection";
+import FourthSection from "@/components/landing-page/FourthSection";
+import Heading from "@/components/landing-page/Heading";
+import SecondSection from "@/components/landing-page/SecondSection";
+import ThirdSection from "@/components/landing-page/ThirdSection";
 
 export default function Home() {
   return (

@@ -2,30 +2,6 @@
 
 import { pop } from "@/helpers/constants";
 import Typewriter from "typewriter-effect";
-
-// const ClientHeading = () => {
-//   return (
-//     <h1
-//       className={`${pop.className} mt-2 text-xl font-semibold uppercase tracking-tight text-zinc-400 antialiased sm:text-3xl md:mt-4 md:whitespace-nowrap lg:text-5xl xl:text-6xl 2xl:text-7xl`}
-//     >
-//       <span>
-//         <Typewriter
-//           options={{
-//             autoStart: true,
-//             loop: false,
-//             delay: 75,
-//           }}
-//           onInit={(typewriter) => {
-//             typewriter
-//               .pauseFor(600)
-//               .typeString("Purunematu küberturvalisus.")
-//               .start();
-//           }}
-//         />
-//       </span>
-//     </h1>
-//   );
-// };
 const ClientHeading = () => {
   return (
     <h1
