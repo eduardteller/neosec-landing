@@ -2,6 +2,24 @@
 import { ChevronDown } from "lucide-react";
 import Form from "next/form";
 import CustomInput from "../shared/CustomInput";
+import { z } from "zod";
+
+export const formSchema = z.object({
+  name: z.string().min(1, "Nimi on kohustuslik"),
+  org: z.string().optional(),
+  "msg-type": z.enum(["none", "email", "telegram", "whatsapp"], {
+    required_error: "Palun valige kontakteerumise viis",
+  }),
+  "telegram-account": z.string().optional(),
+  "whatsapp-account": z
+    .string()
+    .regex(/^\+?[1-9]\d{1,14}$/, "Sisestage korrektne telefoninumber")
+    .optional(),
+  "email-account": z.string().email("Sisestage korrektne email").optional(),
+  message: z.string().min(1, "Sõnum on kohustuslik"),
+});
+
+export type FormData = z.infer<typeof formSchema>;
 
 const CustomForm = () => {
   return (
