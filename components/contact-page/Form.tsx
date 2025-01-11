@@ -1,31 +1,24 @@
 "use client";
+import { FormData, formSchema } from "@/helpers/schemes";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { ChevronDown } from "lucide-react";
-import Form from "next/form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import CustomInput from "../shared/CustomInput";
-import { z } from "zod";
 
-export const formSchema = z.object({
-  name: z.string().min(1, "Nimi on kohustuslik"),
-  org: z.string().optional(),
-  "msg-type": z.enum(["none", "email", "telegram", "whatsapp"], {
-    required_error: "Palun valige kontakteerumise viis",
-  }),
-  "telegram-account": z.string().optional(),
-  "whatsapp-account": z
-    .string()
-    .regex(/^\+?[1-9]\d{1,14}$/, "Sisestage korrektne telefoninumber")
-    .optional(),
-  "email-account": z.string().email("Sisestage korrektne email").optional(),
-  message: z.string().min(1, "Sõnum on kohustuslik"),
-});
-
-export type FormData = z.infer<typeof formSchema>;
+const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
 
 const CustomForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+  });
+
   return (
-    <Form
-      action={"/api/send-contact"}
-      formMethod="POST"
+    <form
+      onSubmit={handleSubmit(onSubmit)}
       className="mx-auto w-full space-y-4"
     >
       <div className="flex w-full flex-row gap-8">
@@ -34,7 +27,7 @@ const CustomForm = () => {
             TÄISNIMI VÕI ALIAS{` `}
             <span className="text-red-500">*</span>
           </h6>
-          <CustomInput placeholder="Nimi" type="text" name="name" />
+          <CustomInput {...register("name")} placeholder="Nimi" type="text" />
         </div>
         <div className="flex w-full flex-col gap-2">
           <h6 className="font-bold uppercase text-zinc-300">
@@ -43,18 +36,19 @@ const CustomForm = () => {
           <CustomInput
             placeholder="Teie organisatsioon"
             type="text"
-            name="org"
+            {...register("org")}
           />
         </div>
       </div>
       <div className="flex w-full flex-col gap-2">
         <h6 className="font-bold uppercase text-zinc-300">
-          KUIDAS VÕTTA TEIEGA ÜHENDUST?
+          KUIDAS VÕTTA TEIEGA ÜHENDUST?{` `}
+          <span className="text-red-500">*</span>
         </h6>
         <div className="group relative w-full">
           <select
             className="w-full appearance-none rounded-md border border-zinc-800 bg-zinc-900 p-4 text-zinc-100 transition-colors hover:border-sky-600 focus:border-sky-600 focus:outline-none"
-            name="msg-type"
+            {...register("msg-type")}
           >
             <option value="none">Soovin, et minuga võetaks ühendust...</option>
             <option value="email">Email</option>
@@ -74,7 +68,7 @@ const CustomForm = () => {
         <CustomInput
           placeholder="Teie Telegrami @kasutajanimi"
           type="text"
-          name="telegram-account"
+          {...register("telegram-account")}
         />
       </div>
 
@@ -85,7 +79,7 @@ const CustomForm = () => {
         <CustomInput
           placeholder="Teie WhatsAppi number koos suunakoodiga"
           type="text"
-          name="whatsapp-account"
+          {...register("whatsapp-account")}
         />
       </div>
 
@@ -96,7 +90,7 @@ const CustomForm = () => {
         <CustomInput
           placeholder="Teie e-posti aadress"
           type="email"
-          name="email-account"
+          {...register("email-account")}
         />
       </div>
 
@@ -108,14 +102,14 @@ const CustomForm = () => {
         <textarea
           className="max-h-96 min-h-24 w-full rounded-md border border-zinc-800 bg-zinc-900 p-4 text-zinc-100 transition-colors hover:border-sky-600 focus:border-sky-600 focus:outline-none"
           placeholder="Sõnum"
-          name="message"
+          {...register("message")}
         ></textarea>
       </div>
 
       <button className="w-full rounded-md bg-sky-600 px-8 py-4 font-semibold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950">
         Saada
       </button>
-    </Form>
+    </form>
   );
 };
 

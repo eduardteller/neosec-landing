@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-select": "^2.1.4",
     "aos": "^2.3.4",
     "class-variance-authority": "^0.7.1",
