@@ -2,7 +2,10 @@ import { z } from "zod";
 
 export const formSchema = z
   .object({
-    name: z.string().min(1, "Nimi on kohustuslik"),
+    name: z
+      .string()
+      .min(1, "Nimi on kohustuslik")
+      .max(100, "Nimi on liiga pikk"),
     org: z.string().optional(),
     "msg-type": z.enum(["none", "email", "telegram", "whatsapp"], {
       invalid_type_error: "Palun valige kontakteerumise viis",
@@ -19,7 +22,10 @@ export const formSchema = z
       .email("Sisestage korrektne email")
       .optional()
       .or(z.literal("")),
-    message: z.string().min(1, "Sõnum on kohustuslik").max(5000),
+    message: z
+      .string()
+      .min(1, "Sõnum on kohustuslik")
+      .max(5000, "Sõnum on liiga pikk"),
   })
   .refine(
     (data) => {
