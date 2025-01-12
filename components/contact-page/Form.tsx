@@ -30,9 +30,7 @@ const CustomForm = () => {
           <CustomInput {...register("name")} placeholder="Nimi" type="text" />
         </div>
         <div className="flex w-full flex-col gap-2">
-          <h6 className="font-bold uppercase text-zinc-300">
-            ORGANISATSIOON (VALIKULINE)
-          </h6>
+          <h6 className="font-bold uppercase text-zinc-300">ORGANISATSIOON</h6>
           <CustomInput
             placeholder="Teie organisatsioon"
             type="text"
@@ -62,9 +60,7 @@ const CustomForm = () => {
       </div>
 
       <div className="flex w-full flex-col gap-2">
-        <h6 className="font-bold uppercase text-zinc-300">
-          TELEGRAM (VALIKULINE)
-        </h6>
+        <h6 className="font-bold uppercase text-zinc-300">TELEGRAM</h6>
         <CustomInput
           placeholder="Teie Telegrami @kasutajanimi"
           type="text"
@@ -73,9 +69,7 @@ const CustomForm = () => {
       </div>
 
       <div className="flex w-full flex-col gap-2">
-        <h6 className="font-bold uppercase text-zinc-300">
-          WHATSAPP (VALIKULINE)
-        </h6>
+        <h6 className="font-bold uppercase text-zinc-300">WHATSAPP</h6>
         <CustomInput
           placeholder="Teie WhatsAppi number koos suunakoodiga"
           type="text"
@@ -84,9 +78,7 @@ const CustomForm = () => {
       </div>
 
       <div className="flex w-full flex-col gap-2">
-        <h6 className="font-bold uppercase text-zinc-300">
-          E-POST (VALIKULINE)
-        </h6>
+        <h6 className="font-bold uppercase text-zinc-300">E-POST</h6>
         <CustomInput
           placeholder="Teie e-posti aadress"
           type="email"
