@@ -42,7 +42,7 @@ const Heading = () => {
               href="/services"
               className="rounded-md bg-sky-600 px-16 py-4 text-xs font-semibold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-black md:text-sm"
             >
-              ALUSTA TÄNA
+              teenused
             </Link>
           </div>
           <LoopingSlider />

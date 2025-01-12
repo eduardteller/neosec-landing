@@ -5,6 +5,7 @@ import FourthSection from "@/components/landing-page/FourthSection";
 import Heading from "@/components/landing-page/Heading";
 import SecondSection from "@/components/landing-page/SecondSection";
 import ThirdSection from "@/components/landing-page/ThirdSection";
+import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (
@@ -18,9 +19,7 @@ export default function Home() {
       <CustomDivider />
       <FourthSection />
       <FifthSection />
-      <footer className="flex items-center justify-center bg-zinc-950 p-8 text-zinc-100">
-        <p className="uppercase tracking-widest">Copyright © 2025 NeoSec </p>
-      </footer>
+      <Footer />
     </>
   );
 }

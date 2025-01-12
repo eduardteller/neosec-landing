@@ -48,7 +48,7 @@ const PageServices = () => {
             </span>
           </div>
           <p className="prose prose-lg max-w-3xl px-8 text-center leading-loose text-zinc-400 max-md:prose-base">
-            {`Saavuta Täielik Küberturbe Meisterlikkus meie kõikehõlmavate lahendustega. Alates digitaalse jalajälje eemaldamisest ja eritellimusel valmistatud digitaalse kaitse teenustest kuni arenenud küberohtude luureandmeteni - me tagame, et teie organisatsiooni digitaalne kindlus on läbimatu.`}
+            {`Terviklikud küberlahendused teie ettevõtte kaitsmiseks ja tugevdamiseks.`}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 lg:flex-row">
             <div className="group flex h-64 w-60 flex-col items-center gap-4 rounded-md border-2 border-zinc-700 bg-gradient-to-b from-zinc-950 to-transparent p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-sky-600 hover:shadow-2xl">

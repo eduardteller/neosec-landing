@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-6">
-      <div>
+      <div className="flex items-center gap-16">
         <Link
           href={"/"}
           className="text-xl font-bold uppercase tracking-tight text-zinc-400 duration-300 hover:text-zinc-100 md:text-3xl"
@@ -11,6 +11,12 @@ const Navbar = () => {
           <span>NEO</span>
           <span className="text-zinc-500">SEC</span>
         </Link>
+        {/* <Link
+          className="text-sm font-semibold uppercase text-zinc-400 duration-300 hover:text-sky-600"
+          href={"/services"}
+        >
+          Teenused
+        </Link> */}
       </div>
       <div className="flex items-center gap-8">
         <div className="text-lg font-medium text-zinc-400 max-sm:hidden">
