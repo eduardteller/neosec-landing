@@ -13,7 +13,7 @@ import pic4 from "../../../public/digital-footprint.webp";
 import pic2 from "../../../public/digital-protection-concierge-service.webp";
 import pic3 from "../../../public/pexels-alesiakozik-6765371.jpg";
 import pic1 from "../../../public/pexels-pixabay-207580.jpg";
-import { bgImageData } from "../page";
+import { bgImageData } from "../../en/page_old";
 const pop = Poppins({
   subsets: ["latin"],
   weight: ["700", "100", "200", "300", "400", "500", "600", "800", "900"],

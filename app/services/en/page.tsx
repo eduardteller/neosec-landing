@@ -1,7 +1,8 @@
+import Accordion from "@/components/Accordion";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 import { servicesSVG2 } from "@/helpers/constants";
-import { servicesPage } from "@/helpers/est";
+import { servicesPage } from "@/helpers/en";
 import {
   ArrowUpRight,
   Bitcoin,
@@ -12,11 +13,10 @@ import {
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import Accordion from "../../components/Accordion";
-import pic4 from "../../public/digital-footprint.webp";
-import pic2 from "../../public/digital-protection-concierge-service.webp";
-import pic3 from "../../public/pexels-alesiakozik-6765371.jpg";
-import pic1 from "../../public/pexels-pixabay-207580.jpg";
+import pic4 from "../../../public/digital-footprint.webp";
+import pic2 from "../../../public/digital-protection-concierge-service.webp";
+import pic3 from "../../../public/pexels-alesiakozik-6765371.jpg";
+import pic1 from "../../../public/pexels-pixabay-207580.jpg";
 const pop = Poppins({
   subsets: ["latin"],
   weight: ["700", "100", "200", "300", "400", "500", "600", "800", "900"],
@@ -32,7 +32,7 @@ const PageServices = () => {
             backgroundImage: servicesSVG2,
           }}
         />
-        <Navbar lang="est" />
+        <Navbar lang="eng" />
         <div className="relative z-10 flex w-full flex-col items-center gap-14 px-4 py-8">
           <div className="text-center text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm">
             {servicesPage.heading.topText}
@@ -248,7 +248,7 @@ const PageServices = () => {
               </p>
 
               <Link
-                href="/contact"
+                href="/contact/en"
                 className="rounded-md bg-sky-600 px-16 py-4 text-sm font-bold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950 md:text-lg"
               >
                 {servicesPage.finalSection.contactButton}

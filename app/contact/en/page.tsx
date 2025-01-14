@@ -2,7 +2,7 @@ import CustomForm from "@/components/contact-page/Form";
 import Heading from "@/components/contact-page/Heading";
 import Footer from "@/components/shared/Footer";
 import { pop } from "@/helpers/constants";
-import { contactPage } from "@/helpers/est";
+import { contactPage } from "@/helpers/en";
 import { Mail } from "lucide-react";
 import { Metadata } from "next";
 
@@ -32,7 +32,7 @@ const page = () => {
 
   return (
     <>
-      <Heading text={heading} />
+      <Heading lang="eng" text={heading} />
       <section className="relative z-10 bg-zinc-950">
         <div className="absolute right-0 top-0 h-2 w-full bg-zinc-950" />
         <div className="mx-auto max-w-7xl px-8 py-24">

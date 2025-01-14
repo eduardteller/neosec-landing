@@ -8,7 +8,21 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-const ThirdSection = () => {
+interface Props {
+  text: {
+    topText: string;
+    titleFirst: string;
+    titleSecond: string;
+    paragraph: string;
+    servicesButton: string;
+    services: {
+      title: string;
+      link: string;
+    }[];
+  };
+}
+
+const ThirdSection = ({ text }: Props) => {
   const baseCSS =
     "group flex h-64 w-60 flex-col items-center gap-4 rounded-md border-2 border-zinc-700 bg-gradient-to-b from-zinc-900 to-zinc-950 p-8 antialiased duration-300 hover:translate-y-[-8px] hover:border-sky-600 ";
 
@@ -24,22 +38,22 @@ const ThirdSection = () => {
             className="max-w-lg space-y-8"
           >
             <div className="text-xs font-bold uppercase tracking-widest text-sky-600 max-lg:text-center sm:text-sm">
-              teenused{" "}
+              {text.topText}
             </div>
             <div className="space-y-1 text-start sm:space-y-2">
               <h1
                 className={`whitespace-nowrap text-xl font-semibold tracking-tight text-zinc-100 sm:text-4xl ${pop.className}`}
               >
-                Mitmekesised Tööstusharud
+                {text.titleFirst}
               </h1>
               <h2
                 className={`text-xl font-semibold tracking-tight text-zinc-400 sm:text-4xl ${pop.className}`}
               >
-                Kohandatud Lahendused
+                {text.titleSecond}
               </h2>
             </div>
             <p className="prose prose-base text-zinc-400 sm:prose-lg">
-              {`Saavuta Täielik Küberturbe Meisterlikkus meie kõikehõlmavate lahendustega. Alates digitaalse jalajälje eemaldamisest ja eritellimusel valmistatud digitaalse kaitse teenustest kuni arenenud küberohtude luureandmeteni - me tagame, et teie organisatsiooni digitaalne kindlus on läbimatu.`}
+              {text.paragraph}
             </p>
           </div>
 
@@ -53,25 +67,25 @@ const ThirdSection = () => {
               <div className={baseCSS}>
                 <EarthLock size={36} className={iconCSS} />
                 <p className="text-center text-lg font-medium">
-                  Küberohtude <br /> Luure
+                  {text.services[0].title}
                 </p>
                 <Link
                   className="flex items-center justify-center text-sm uppercase"
-                  href="/services#section1"
+                  href={text.services[0].link}
                 >
-                  Loe Lähemalt <ArrowUpRight />
+                  {text.servicesButton} <ArrowUpRight />
                 </Link>
               </div>
               <div className={baseCSS}>
                 <Shield size={36} className={iconCSS} />
                 <p className="text-center text-lg font-medium">
-                  Digitaalse Kaitse Concierge-teenus
+                  {text.services[1].title}
                 </p>
                 <Link
                   className="flex items-center justify-center text-sm uppercase"
-                  href="/services#section2"
+                  href={text.services[1].link}
                 >
-                  Loe Lähemalt <ArrowUpRight />
+                  {text.servicesButton} <ArrowUpRight />
                 </Link>
               </div>
             </div>
@@ -79,25 +93,25 @@ const ThirdSection = () => {
               <div className={baseCSS}>
                 <Fingerprint size={36} className={iconCSS} />
                 <p className="text-center text-lg font-medium">
-                  Digitaalse Jalajälje Eemaldamine
+                  {text.services[2].title}
                 </p>
                 <Link
                   className="flex items-center justify-center text-sm uppercase"
-                  href="/services#section3"
+                  href={text.services[2].link}
                 >
-                  Loe Lähemalt <ArrowUpRight />
+                  {text.servicesButton} <ArrowUpRight />
                 </Link>
               </div>
               <div className={baseCSS}>
                 <Bitcoin size={36} className={iconCSS} />
                 <p className="text-center text-lg font-medium">
-                  Küberuurimised ja Vara Tagasisaamine
+                  {text.services[3].title}
                 </p>
                 <Link
                   className="flex items-center justify-center text-sm uppercase"
-                  href="/services#section4"
+                  href={text.services[3].link}
                 >
-                  Loe Lähemalt <ArrowUpRight />
+                  {text.servicesButton} <ArrowUpRight />
                 </Link>
               </div>
             </div>

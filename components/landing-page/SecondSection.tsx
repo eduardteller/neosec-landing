@@ -2,7 +2,16 @@ import { pop } from "@/helpers/constants";
 import Image from "next/image";
 import pic2 from "../../public/blurface2.jpg";
 
-const SecondSection = () => {
+interface Props {
+  text: {
+    topText: string;
+    titleFirst: string;
+    titleSecond: string;
+    paragraph: string;
+  };
+}
+
+const SecondSection = ({ text }: Props) => {
   return (
     <section className="bg-zinc-950">
       <div className="mx-auto max-w-7xl px-4 py-24 md:px-8 lg:px-8">
@@ -26,20 +35,20 @@ const SecondSection = () => {
             className="flex w-full flex-col justify-center gap-8 px-4 py-8 sm:px-8 md:items-center md:px-24 lg:items-start lg:py-0"
           >
             <div className="mx-auto text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm lg:mx-0">
-              Kuldstandardi kehtestamine{" "}
+              {text.topText}
             </div>
             <div className="flex flex-col justify-center gap-2 text-xl font-semibold tracking-tight sm:text-center sm:text-4xl lg:flex-col lg:text-start">
               <h1
                 className={`whitespace-nowrap text-zinc-100 ${pop.className}`}
               >
-                Tõestatud Asjatundlikkus
+                {text.titleFirst}
               </h1>
               <h2 className={`text-zinc-400 ${pop.className}`}>
-                Milles Võid Kindel Olla
+                {text.titleSecond}
               </h2>
             </div>
             <p className="prose prose-base text-left leading-loose text-zinc-400 sm:prose-lg">
-              {`NeoSec on küberturbe esirinnas, arendades väsimatult oma meetodeid, et edestada tekkivaid ohte. Meie pühendumus uuendustegevusele tagab, et teie organisatsioon püsib kaitstuna tänapäevaseima tehnoloogiaga.`}
+              {text.paragraph}
             </p>
           </div>
         </div>

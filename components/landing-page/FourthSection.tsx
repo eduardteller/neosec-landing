@@ -10,7 +10,20 @@ import {
 } from "lucide-react";
 import ServiceTypesComponent from "../ServiceTypesComponent";
 
-const FourthSection = () => {
+interface Props {
+  text: {
+    topText: string;
+    titleFirst: string;
+    titleSecond: string;
+    paragraph: string;
+    services: {
+      title: string;
+      description: string;
+    }[];
+  };
+}
+
+const FourthSection = ({ text }: Props) => {
   return (
     <section className="bg-zinc-950">
       <div className="mx-auto max-w-5xl py-24">
@@ -22,14 +35,14 @@ const FourthSection = () => {
             data-aos-duration="600"
           >
             <h6 className="text-center text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm">
-              Lahendused Kõigile
+              {text.topText}
             </h6>
             <h1 className="space-x-2 text-xl font-semibold tracking-tight text-zinc-100 sm:space-x-4 sm:text-center sm:text-4xl md:text-5xl">
-              <span>Võimestame</span>
-              <span className="text-zinc-400">Iga Tööstusharu</span>
+              <span>{text.titleFirst}</span>
+              <span className="text-zinc-400">{text.titleSecond}</span>
             </h1>
             <p className="prose prose-base max-w-4xl text-zinc-400 sm:prose-lg sm:text-center">
-              {`NeoSec pakub tipptasemel luurelahendusi, mis annavad käegakatsutavaid tulemusi juriidikas, rahanduses, valitsuses, tervishoius, energias, tehnoloogias ja jaekaubanduses. Oleme teie usaldusväärne partner edu saavutamisel ja konkurentsieelise tagamisel. `}
+              {text.paragraph}
             </p>
           </div>
 
@@ -41,45 +54,45 @@ const FourthSection = () => {
           >
             <div className="flex w-full basis-1/2 flex-col gap-4">
               <ServiceTypesComponent
-                title="Valitsus"
-                description="Aidates valitsusasutustel  ennetada riske kriitilistes otsustusprotsessides."
+                title={text.services[0].title}
+                description={text.services[0].description}
                 Icon={Landmark}
               />
               <ServiceTypesComponent
-                title="telekommunikatsioon"
-                description="Täpne ülevaade ohustsenaariumidest ja andmekaitse tugevdamiseks."
+                title={text.services[1].title}
+                description={text.services[1].description}
                 Icon={Phone}
               />
               <ServiceTypesComponent
-                title="tervishoid"
-                description="Patsiendiandmete turvalisus ja tervishoiuteenuste tõrgeteta toimimine."
+                title={text.services[2].title}
+                description={text.services[2].description}
                 Icon={Ambulance}
               />
               <ServiceTypesComponent
-                title="krüpto"
-                description="Krüptovaluutade turvalisuse ja vastavuse tugevdamine."
+                title={text.services[3].title}
+                description={text.services[3].description}
                 Icon={Bitcoin}
               />
             </div>
             <div className="flex w-full basis-1/2 flex-col gap-4">
               <ServiceTypesComponent
-                title="rahandus"
-                description="Tugimeetmed turvalise andmeanalüüsi ja finantskuritegude ennetamiseks."
+                title={text.services[4].title}
+                description={text.services[4].description}
                 Icon={HandCoins}
               />
               <ServiceTypesComponent
-                title="fintech"
-                description="Innovaatilised lahendused finantstehnoloogia ettevõtete turvalisuse tagamiseks."
+                title={text.services[5].title}
+                description={text.services[5].description}
                 Icon={Cpu}
               />
               <ServiceTypesComponent
-                title="energia"
-                description="Energiasektori kriitilise infrastruktuuri kaitsmine tänapäevaste ohtude eest."
+                title={text.services[6].title}
+                description={text.services[6].description}
                 Icon={BatteryFull}
               />
               <ServiceTypesComponent
-                title="õigusvaldkond"
-                description="Toetame õiguskaitse ja vastavusnõuete täitmist kaasaegsete tehnoloogiatega."
+                title={text.services[7].title}
+                description={text.services[7].description}
                 Icon={Scale}
               />
             </div>

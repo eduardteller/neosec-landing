@@ -1,41 +1,44 @@
 import Link from "next/link";
 
-const Navbar = () => {
+interface Props {
+  lang?: "est" | "eng";
+}
+
+const Navbar = ({ lang }: Props) => {
+  const activeLink = "text-zinc-100";
+  const inactiveLink = "duration-300 hover:text-zinc-100";
   return (
     <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-6">
       <div className="flex items-center gap-16">
         <Link
-          href={"/"}
+          href={lang === "eng" ? "/en" : "/"}
           className="text-xl font-bold uppercase tracking-tight text-zinc-400 duration-300 hover:text-zinc-100 md:text-3xl"
         >
           <span>NEO</span>
           <span className="text-zinc-500">SEC</span>
         </Link>
-        {/* <Link
-          className="text-sm font-semibold uppercase text-zinc-400 duration-300 hover:text-sky-600"
-          href={"/services"}
-        >
-          Teenused
-        </Link> */}
       </div>
       <div className="flex items-center gap-8">
         <div className="text-lg font-medium text-zinc-400 max-sm:hidden">
           <Link
-            className="tracking-tight duration-300 hover:text-zinc-100"
-            href={"/"}
+            className={lang === "eng" ? activeLink : inactiveLink}
+            href={"/en"}
           >
             ENG
           </Link>
           <span> | </span>
-          <Link className="text-zinc-100" href={"/"}>
+          <Link
+            className={lang === "eng" ? inactiveLink : activeLink}
+            href={"/"}
+          >
             EST
           </Link>
         </div>
         <Link
-          href="/contact"
+          href={`/contact${lang === "eng" ? "/en" : ""}`}
           className="rounded-md border border-zinc-300 bg-transparent px-8 py-4 text-xs font-bold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950 md:text-sm"
         >
-          KONTAKT
+          {lang == "eng" ? "Contact" : "Kontakt"}
         </Link>
       </div>
     </div>

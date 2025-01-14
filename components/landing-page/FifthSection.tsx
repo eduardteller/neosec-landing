@@ -1,7 +1,17 @@
 import { pop } from "@/helpers/constants";
 import Link from "next/link";
 
-const FifthSection = () => {
+interface Props {
+  text: {
+    titleFirst: string;
+    titleSecond: string;
+    paragraph: string;
+    contactButton: string;
+  };
+  lang?: "est" | "eng";
+}
+
+const FifthSection = ({ text, lang = "est" }: Props) => {
   return (
     <section className="bg-zinc-950">
       <section className="bg-gradient-to-br from-sky-950/80 to-zinc-950">
@@ -16,23 +26,23 @@ const FifthSection = () => {
               <span
                 className={`whitespace-nowrap font-semibold tracking-tight text-zinc-100 ${pop.className}`}
               >
-                Avasta Ülim
+                {text.titleFirst}
               </span>
               <span
                 className={`font-semibold tracking-tight text-zinc-400 ${pop.className}`}
               >
-                Kaitse
+                {text.titleSecond}
               </span>
             </div>
             <p className="prose prose-base px-8 text-center text-zinc-400 md:prose-lg md:leading-loose">
-              {`Kaitse oma kõige väärtuslikumaid varasid NeoSeci eliitluureteenustega. Võta meiega ühendust juba täna, et tagada ületamatu kaitse!`}
+              {text.paragraph}
             </p>
 
             <Link
-              href="/contact"
+              href={`/services${lang === "eng" ? "/en" : ""}`}
               className="rounded-md bg-sky-600 px-16 py-4 text-sm font-bold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950 md:text-lg"
             >
-              KONTAKT
+              {text.contactButton}
             </Link>
           </div>
         </div>
