@@ -53,7 +53,7 @@ const Heading = ({ lang = "est", text }: Props) => {
           </p>
           <div data-aos="fade-up" data-aos-delay="600" className="flex gap-4">
             <Link
-              href={`/services${lang === "eng" && "/en"}`}
+              href={`/services${lang === "eng" ? "/en" : ""}`}
               className="rounded-md bg-sky-600 px-16 py-4 text-xs font-semibold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-black md:text-sm"
             >
               {text.button}

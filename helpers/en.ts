@@ -29,19 +29,19 @@ export const landingPage = {
     services: [
       {
         title: "Cyber Threat Intelligence",
-        link: "/services#section1",
+        link: "/services/en#section1",
       },
       {
         title: "Digital Defense Concierge Service",
-        link: "/services#section2",
+        link: "/services/en#section2",
       },
       {
         title: "Digital Footprint Removal",
-        link: "/services#section3",
+        link: "/services/en#section3",
       },
       {
         title: "Cyber Investigations & Asset Recovery",
-        link: "/services#section4",
+        link: "/services/en#section4",
       },
     ],
   },
@@ -306,4 +306,3 @@ export const servicesPage = {
     contactButton: "Get in Touch",
   },
 };
-

@@ -39,7 +39,7 @@ const FifthSection = ({ text, lang = "est" }: Props) => {
             </p>
 
             <Link
-              href={`/services${lang === "eng" ? "/en" : ""}`}
+              href={`/contact${lang === "eng" ? "/en" : ""}`}
               className="rounded-md bg-sky-600 px-16 py-4 text-sm font-bold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950 md:text-lg"
             >
               {text.contactButton}
