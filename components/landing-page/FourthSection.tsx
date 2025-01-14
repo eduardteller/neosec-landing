@@ -42,44 +42,44 @@ const FourthSection = () => {
             <div className="flex w-full basis-1/2 flex-col gap-4">
               <ServiceTypesComponent
                 title="Valitsus"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                description="Aidates valitsusasutustel  ennetada riske kriitilistes otsustusprotsessides."
                 Icon={Landmark}
               />
               <ServiceTypesComponent
                 title="telekommunikatsioon"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                description="Täpne ülevaade ohustsenaariumidest ja andmekaitse tugevdamiseks."
                 Icon={Phone}
               />
               <ServiceTypesComponent
                 title="tervishoid"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                description="Patsiendiandmete turvalisus ja tervishoiuteenuste tõrgeteta toimimine."
                 Icon={Ambulance}
               />
               <ServiceTypesComponent
                 title="krüpto"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                description="Krüptovaluutade turvalisuse ja vastavuse tugevdamine."
                 Icon={Bitcoin}
               />
             </div>
             <div className="flex w-full basis-1/2 flex-col gap-4">
               <ServiceTypesComponent
                 title="rahandus"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                description="Tugimeetmed turvalise andmeanalüüsi ja finantskuritegude ennetamiseks."
                 Icon={HandCoins}
               />
               <ServiceTypesComponent
                 title="fintech"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                description="Innovaatilised lahendused finantstehnoloogia ettevõtete turvalisuse tagamiseks."
                 Icon={Cpu}
               />
               <ServiceTypesComponent
                 title="energia"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                description="Energiasektori kriitilise infrastruktuuri kaitsmine tänapäevaste ohtude eest."
                 Icon={BatteryFull}
               />
               <ServiceTypesComponent
                 title="õigusvaldkond"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa ipsa placeat officia fugit possimus vero at exercitationem eaque consectetur, unde, quaerat ex reiciendis maxime voluptates praesentium accusamus ullam deleniti a! Commodi, rerum doloremque incidunt assumenda similique, error nostrum culpa dolorum, eligendi temporibus nulla sint officia voluptatum debitis molestias inventore!"
+                description="Toetame õiguskaitse ja vastavusnõuete täitmist kaasaegsete tehnoloogiatega."
                 Icon={Scale}
               />
             </div>

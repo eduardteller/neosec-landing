@@ -16,7 +16,7 @@ const ClientHeading = () => {
             delay: 100,
           }}
           onInit={(typewriter) => {
-            typewriter.pauseFor(800).typeString("Alusta Täna").start();
+            typewriter.pauseFor(800).typeString("Alusta Täna.").start();
           }}
         />
       </span>

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import Accordion from "../../components/Accordion";
 import pic4 from "../../public/digital-footprint.webp";
 import pic2 from "../../public/digital-protection-concierge-service.webp";
@@ -350,12 +351,12 @@ const PageServices = () => {
                 {`Tehke koostööd NeoSeciga, et saada ületamatuid küberturvalisuse lahendusi ja kindlustage oma digitaalne kohalolek juba täna. Kogege meie tipptasemel kaitsega võrdlematut meelerahu.`}
               </p>
 
-              <a
-                href="mailto:info@neosec.tech"
+              <Link
+                href="/contact"
                 className="rounded-md bg-sky-600 px-16 py-4 text-sm font-bold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950 md:text-lg"
               >
                 Võta Meiega Ühendust
-              </a>
+              </Link>
             </div>
           </div>
         </section>

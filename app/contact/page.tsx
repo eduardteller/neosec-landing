@@ -50,11 +50,12 @@ const page = () => {
                   size={48}
                   className="duration-300 group-hover:text-sky-600"
                 />
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-1">
                   <h5
-                    className={`font-bold uppercase text-zinc-300 ${pop.className}`}
+                    className={`text-lg font-bold text-zinc-300 ${pop.className}`}
                   >
-                    Kirjutage meile mailile!
+                    Teie küsimustele vastame ka{` `}
+                    <span className="text-zinc-400">meili teel!</span>
                   </h5>
                   <p className="font-semibold text-zinc-400">
                     info@neosec.tech

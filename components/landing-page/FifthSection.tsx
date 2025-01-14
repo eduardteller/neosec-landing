@@ -1,4 +1,5 @@
 import { pop } from "@/helpers/constants";
+import Link from "next/link";
 
 const FifthSection = () => {
   return (
@@ -27,12 +28,12 @@ const FifthSection = () => {
               {`Kaitse oma kõige väärtuslikumaid varasid NeoSeci eliitluureteenustega. Võta meiega ühendust juba täna, et tagada ületamatu kaitse!`}
             </p>
 
-            <a
-              href="mailto:info@neosec.tech"
+            <Link
+              href="/contact"
               className="rounded-md bg-sky-600 px-16 py-4 text-sm font-bold uppercase text-zinc-300 duration-300 hover:bg-zinc-300 hover:text-zinc-950 md:text-lg"
             >
               KONTAKT
-            </a>
+            </Link>
           </div>
         </div>
       </section>

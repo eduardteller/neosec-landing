@@ -19,7 +19,7 @@ export async function sendContact(data: FormData): Promise<{
 
     // Construct the email options
     const mailOptions = {
-      to: "eduard@neosec.tech",
+      to: "info@neosec.tech",
       subject: "NEW MESSAGE FROM CONTACT FORM",
       text: `
             Name: ${data.name}
