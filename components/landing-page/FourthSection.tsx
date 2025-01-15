@@ -8,7 +8,7 @@ import {
   Phone,
   Scale,
 } from "lucide-react";
-import ServiceTypesComponent from "../ServiceTypesComponent";
+import ServiceTypesComponent from "../shared/ServiceTypesComponent";
 
 interface Props {
   text: {
@@ -34,10 +34,10 @@ const FourthSection = ({ text }: Props) => {
             data-aos-delay="200"
             data-aos-duration="600"
           >
-            <h6 className="text-center text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm">
+            <h6 className="text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-center sm:text-sm">
               {text.topText}
             </h6>
-            <h1 className="space-x-2 text-xl font-semibold tracking-tight text-zinc-100 sm:space-x-4 sm:text-center sm:text-4xl md:text-5xl">
+            <h1 className="space-x-2 whitespace-nowrap text-2xl font-semibold tracking-tight text-zinc-100 sm:text-center sm:text-4xl md:text-5xl lg:space-x-4">
               <span>{text.titleFirst}</span>
               <span className="text-zinc-400">{text.titleSecond}</span>
             </h1>

@@ -277,8 +277,8 @@ export const servicesPage = {
   },
 
   fourthSection: {
-    titleFirst: "Cyber Investigations & Asset",
-    titleSecond: "Recovery",
+    titleFirst: "Cyber Investigations &",
+    titleSecond: "Asset Recovery",
     items: [
       {
         firstText: "Assisting Victims in Asset Recovery",

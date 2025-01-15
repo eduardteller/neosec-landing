@@ -29,7 +29,7 @@ const FirstSection = ({ text }: Props) => {
             {text.titleFirst}
           </h2>
           <h2
-            className={`whitespace-nowrap text-xl font-semibold tracking-tight text-zinc-400 sm:text-4xl md:text-5xl ${pop.className}`}
+            className={`text-2xl font-semibold tracking-tight text-zinc-400 sm:text-4xl md:text-5xl ${pop.className}`}
           >
             {text.titleSecond}
           </h2>

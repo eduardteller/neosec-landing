@@ -1,4 +1,4 @@
-import { AOSInit } from "@/components/AOSInit";
+import { AOSInit } from "@/components/shared/AOSInit";
 import Providers from "@/components/shared/ProgressBarProvider";
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";

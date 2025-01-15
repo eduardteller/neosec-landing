@@ -250,10 +250,10 @@ export const servicesPage = {
   },
 
   finalSection: {
-    titleFirst: "Kindlusta Oma Digitaalne",
-    titleSecond: "Tulevik",
+    titleFirst: "Kindlusta Oma",
+    titleSecond: "Digitaalne Tulevik",
     paragraph: `Kaitse oma digitaalset jalajälge NeoSeci tipptasemel teenustega. Võta meiega ühendust juba täna, et tagada oma digitaalne turvalisus!`,
-    contactButton: "Võta Meiega Ühendust",
+    contactButton: "Võta Ühendust",
   },
 };
 
@@ -270,7 +270,7 @@ export const contactPage = {
     paragraph: `Pakume sinu vajadustele kohandatud ja nutikaid lahendusi, mis toetavad olulisi uurimisi, digitaalsete ohtude analüüsi ning valgekraede kuritegevuse juhtumeid.`,
     mail: {
       titleFirst: "Teie küsimustele vastame ka",
-      titleSecond: "meili teel!",
+      titleSecond: "e-posti teel!",
     },
   },
   form: {

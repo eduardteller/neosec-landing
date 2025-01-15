@@ -12,6 +12,7 @@ const config: Config = {
       animation: {
         scroll: "scroll 40s linear infinite",
         scrollm: "scrollm 40s linear infinite",
+        scrolls: "scrolls 40s linear infinite",
       },
       keyframes: {
         scroll: {
@@ -28,6 +29,14 @@ const config: Config = {
           },
           "100%": {
             transform: "translateX(calc(-196px * 8))",
+          },
+        },
+        scrolls: {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(calc(-128px * 8))",
           },
         },
       },

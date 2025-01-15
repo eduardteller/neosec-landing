@@ -1,7 +1,7 @@
 import { pop, svgBackground } from "@/helpers/constants";
 import Link from "next/link";
-import LoopingSlider from "../LoopingSlider";
-import ClientHeading from "../services-page/ClientHeading";
+import ClientHeading from "../shared/ClientHeading";
+import LoopingSlider from "../shared/LoopingSlider";
 import Navbar from "../shared/Navbar";
 
 interface Props {
@@ -39,7 +39,7 @@ const Heading = ({ lang = "est", text }: Props) => {
             />
 
             <h1
-              className={`${pop.className} mt-2 text-xl font-semibold uppercase tracking-tight text-zinc-400 antialiased sm:text-3xl md:mt-4 md:whitespace-nowrap lg:text-5xl xl:text-6xl 2xl:text-7xl`}
+              className={`${pop.className} mt-2 text-2xl font-semibold uppercase tracking-tight text-zinc-400 antialiased sm:text-3xl md:mt-4 md:whitespace-nowrap lg:text-5xl xl:text-6xl 2xl:text-7xl`}
             >
               {text.subtitle}
             </h1>

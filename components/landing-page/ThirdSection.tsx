@@ -37,17 +37,17 @@ const ThirdSection = ({ text }: Props) => {
             data-aos-duration="1000"
             className="max-w-lg space-y-8"
           >
-            <div className="text-xs font-bold uppercase tracking-widest text-sky-600 max-lg:text-center sm:text-sm">
+            <div className="text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm">
               {text.topText}
             </div>
             <div className="space-y-1 text-start sm:space-y-2">
               <h1
-                className={`whitespace-nowrap text-xl font-semibold tracking-tight text-zinc-100 sm:text-4xl ${pop.className}`}
+                className={`whitespace-nowrap text-2xl font-semibold tracking-tight text-zinc-100 sm:text-4xl ${pop.className}`}
               >
                 {text.titleFirst}
               </h1>
               <h2
-                className={`text-xl font-semibold tracking-tight text-zinc-400 sm:text-4xl ${pop.className}`}
+                className={`text-2xl font-semibold tracking-tight text-zinc-400 sm:text-4xl ${pop.className}`}
               >
                 {text.titleSecond}
               </h2>

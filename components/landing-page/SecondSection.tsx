@@ -34,10 +34,10 @@ const SecondSection = ({ text }: Props) => {
             data-aos-duration="1000"
             className="flex w-full flex-col justify-center gap-8 px-4 py-8 sm:px-8 md:items-center md:px-24 lg:items-start lg:py-0"
           >
-            <div className="mx-auto text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm lg:mx-0">
+            <div className="text-xs font-bold uppercase tracking-widest text-sky-600 sm:text-sm">
               {text.topText}
             </div>
-            <div className="flex flex-col justify-center gap-2 text-xl font-semibold tracking-tight sm:text-center sm:text-4xl lg:flex-col lg:text-start">
+            <div className="flex flex-col justify-center gap-2 text-2xl font-semibold tracking-tight sm:text-center sm:text-4xl lg:flex-col lg:text-start">
               <h1
                 className={`whitespace-nowrap text-zinc-100 ${pop.className}`}
               >

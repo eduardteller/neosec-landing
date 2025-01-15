@@ -11,8 +11,8 @@ import {
 
 const LoopingSlider = () => {
   // const newSize = size || 96;
-  const color = "text-zinc-400 lg:w-24 lg:h-24 w-20 h-20";
-  const baseCSS = "lg:w-[248px] w-[196px] ";
+  const color = "text-zinc-400 lg:w-24 lg:h-24 md:w-20 md:h-20 w-16 h-16";
+  const baseCSS = "lg:w-[248px] md:w-[196px] w-[128px]";
   const icons = [
     <Bitcoin key="1" className={color} />,
     <EarthLock key="2" className={color} />,
@@ -28,7 +28,7 @@ const LoopingSlider = () => {
     <div className="w- relative w-[calc(100vw-17px)] py-8">
       <div className="relative h-fit overflow-hidden">
         <div className="[mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent_100%)]">
-          <ul className="animate-scrollm flex h-full w-[calc(196px*24)] items-center lg:w-[calc(248px*24)] lg:animate-scroll">
+          <ul className="animate-scrolls flex h-full w-[calc(128px*24)] items-center md:w-[calc(196px*24)] md:animate-scrollm lg:w-[calc(248px*24)] lg:animate-scroll">
             {icons.map((icon, i) => (
               <li key={`first-${i}`} className={baseCSS}>
                 {icon}

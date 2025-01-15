@@ -56,12 +56,14 @@ const CustomForm = ({ text }: Props) => {
         onSubmit={handleSubmit(onSubmit)}
         className="mx-auto w-full space-y-4"
       >
-        <div className="flex w-full flex-row gap-8">
+        <div className="flex w-full flex-row gap-4 md:gap-8">
           <div className="flex w-full flex-col gap-2">
-            <h6 className="font-bold uppercase text-zinc-300">
-              {text.name.title}
+            <div className="flex w-full flex-row gap-2">
+              <h6 className="line-clamp-1 overflow-hidden text-ellipsis font-bold uppercase text-zinc-300 max-sm:w-0 max-sm:grow">
+                {text.name.title}
+              </h6>
               <span className="text-red-500">*</span>
-            </h6>
+            </div>
             <CustomInput
               {...register("name")}
               placeholder={text.name.placeholder}
@@ -74,7 +76,7 @@ const CustomForm = ({ text }: Props) => {
             )}
           </div>
           <div className="flex w-full flex-col gap-2">
-            <h6 className="font-bold uppercase text-zinc-300">
+            <h6 className="line-clamp-1 w-full overflow-hidden text-ellipsis font-bold uppercase text-zinc-300">
               {text.org.title}
             </h6>
             <CustomInput
@@ -94,7 +96,7 @@ const CustomForm = ({ text }: Props) => {
           </h6>
           <div className="group relative w-full">
             <select
-              className="w-full appearance-none rounded-md border border-zinc-800 bg-zinc-900 p-4 text-zinc-100 transition-colors hover:border-sky-600 focus:border-sky-600 focus:outline-none"
+              className="line-clamp-1 w-full appearance-none overflow-hidden text-ellipsis rounded-md border border-zinc-800 bg-zinc-900 p-4 text-zinc-100 transition-colors hover:border-sky-600 focus:border-sky-600 focus:outline-none"
               {...register("msg-type")}
             >
               <option value="none">{text.contactType.placeholder}</option>
