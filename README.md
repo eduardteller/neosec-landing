@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NeoSec Landing Page
 
-## Getting Started
+A modern, responsive cybersecurity company landing page built as a skill demonstration project.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Frontend Framework
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js 15** - Latest React framework with App Router for server-side rendering and optimal performance
+- **React 19** - Component-based UI library with modern hooks and state management
+- **TypeScript** - Type-safe development with enhanced code reliability
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Styling & UI
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Tailwind CSS** - Utility-first CSS framework for rapid, responsive design
+- **Tailwind Typography** - Enhanced typography styling
+- **Tailwind Animate** - Smooth animations and transitions
+- **Lucide React** - Modern icon library
+- **AOS (Animate On Scroll)** - Scroll-triggered animations
 
-## Learn More
+### Forms & Validation
 
-To learn more about Next.js, take a look at the following resources:
+- **React Hook Form** - Performant form handling with minimal re-renders
+- **Zod** - TypeScript-first schema validation
+- **Hookform Resolvers** - Integration between React Hook Form and Zod
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Backend & Email
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Nodemailer** - Server-side email functionality for contact forms
+- **Server Actions** - Next.js server-side form processing
 
-## Deploy on Vercel
+### User Experience
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **React Hot Toast** - Elegant notification system
+- **Typewriter Effect** - Dynamic text animations
+- **Next NProgress Bar** - Loading progress indicators
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Development Tools
+
+- **ESLint** - Code linting and quality assurance
+- **Prettier** - Code formatting and consistency
+- **PNPM** - Fast, efficient package management
+
+### Internationalization
+
+- **Multi-language Support** - Estonian and English language versions with proper routing
